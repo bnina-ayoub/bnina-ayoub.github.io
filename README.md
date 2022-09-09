@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @bnina-ayoub
-- 👀 I’m interested in Cybersecurity and Machine Learning
-- 🌱 I’m currently learning Data analysis and Networking
+- 👀 I’m interested in Artificial Intelligence, Data Science and Machine Learning
+- 🌱 I’m currently studying computer engineering and Machine Learning
 - 🗂️ I’m looking to collaborate on an internship
 - 📫 Reach me on my LinkedIn or my Email
 

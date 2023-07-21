@@ -2,7 +2,7 @@
 - 👀 I’m interested in Artificial Intelligence(Machine Learning & Deep Learning) & Embedded Systems
 - 🌱 I’m currently studying computer engineering and Machine Learning
 - 🗂️ I’m looking to collaborate on an internship
-- 📫 Reach me on my [![Linkedin]](https://www.linkedin.com/in/ayoub-bnina/)
+- 📫 Reach me on my [![<a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons"></a>](https://www.linkedin.com/in/ayoub-bnina/)
  or my Email
 - 
 ## Languages & Frameworks

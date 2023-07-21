@@ -1,6 +1,5 @@
-- Hi 👋 , I’m Ayoub Bnina
-- I’m currently a final year Computer Engineering Student Specializing in IoT ![iot](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/423824d3-1770-47bc-97e9-3ce3c3ee664e) & Embedded Systems ![icons8-raspberry-pi-zero-94](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/af789d7b-4972-4bd4-b5a7-85f8c8dce2ef)
- while studying
+- Hi 👋 , I am Ayoub Bnina
+- I’m currently a final year Computer Engineering Student Specializing in IoT ![iot](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/423824d3-1770-47bc-97e9-3ce3c3ee664e) & Embedded Systems ![pcb-board](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/90a4547d-b007-4c18-ab09-30606feff434) while studying
 
 
 Data Science ![DS](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/29f6a5a6-0a67-4c87-aac0-a5e9ab4dca95)

@@ -2,7 +2,7 @@
 - 👀 I’m interested in Artificial Intelligence(Machine Learning & Deep Learning) & Embedded Systems
 - 🌱 I’m currently studying computer engineering and Machine Learning
 - 🗂️ I’m looking to collaborate on an internship
-- 📫 Reach me on my [![linkedin](https://camo.githubusercontent.com/d74e5f1536c50380055c58bda7482e9acf52e41def3c02a25e5de66f53591bbf/68747470733a2f2f7777772e6c696e6b6564696e2e636f6d2f696e2f61796f75622d626e696e612f)(https://www.linkedin.com/in/ayoub-bnina/)
+- 📫 Reach me on my [![linkedin]([https://camo.githubusercontent.com/d74e5f1536c50380055c58bda7482e9acf52e41def3c02a25e5de66f53591bbf/68747470733a2f2f7777772e6c696e6b6564696e2e636f6d2f696e2f61796f75622d626e696e612f](https://www.flaticon.com/free-icon/python_5968350))(https://www.linkedin.com/in/ayoub-bnina/)
  or my [Email
 - 
 ## Languages & Frameworks

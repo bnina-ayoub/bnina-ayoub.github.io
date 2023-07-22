@@ -2,8 +2,7 @@
 - I’m currently a final year Computer Engineering Student Specializing in IoT ![iot](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/423824d3-1770-47bc-97e9-3ce3c3ee664e) & Embedded Systems ![pcb-board](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/90a4547d-b007-4c18-ab09-30606feff434) while studying
 
 
-Data Science ![DS](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/29f6a5a6-0a67-4c87-aac0-a5e9ab4dca95)
-on my own pace
+Data Science ![DS](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/29f6a5a6-0a67-4c87-aac0-a5e9ab4dca95)  on my own pace
 - I’m fond of Robotics  ![icons8-robotics-64](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/b07dcefa-81b1-4e77-ac0b-207ffef65b40)
   and Automation ![Automation](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/18e64630-14e5-4e33-b821-6349503e22ed)
 

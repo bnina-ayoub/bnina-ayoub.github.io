@@ -1,12 +1,17 @@
 - Hi 👋 , I am Ayoub Bnina
-- I’m currently a final year Computer Engineering Student Specializing in IoT ![iot](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/423824d3-1770-47bc-97e9-3ce3c3ee664e) & Embedded Systems ![pcb-board](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/90a4547d-b007-4c18-ab09-30606feff434) while studying
+- I’m currently a final year Computer Engineering Student Specializing in IoT ![iot](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/423824d3-1770-47bc-97e9-3ce3c3ee664e) & Embedded Systems ![pcb-board](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/90a4547d-b007-4c18-ab09-30606feff434)
+
+## My Interests :  
+
+![icons8-robotics-64](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/b07dcefa-81b1-4e77-ac0b-207ffef65b40) ![Automation](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/18e64630-14e5-4e33-b821-6349503e22ed) ![DS](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/29f6a5a6-0a67-4c87-aac0-a5e9ab4dca95)
 
 
-Data Science ![DS](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/29f6a5a6-0a67-4c87-aac0-a5e9ab4dca95)  on my own pace
-- I’m fond of Robotics  ![icons8-robotics-64](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/b07dcefa-81b1-4e77-ac0b-207ffef65b40)
-  and Automation ![Automation](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/18e64630-14e5-4e33-b821-6349503e22ed)
+## Contact Me 📫  :
+  
+[![linkedin](https://github.com/bnina-ayoub/bnina-ayoub/blob/main/github%20icons/linkedin.png)](https://www.linkedin.com/in/ayoub-bnina/)     [![email](https://github.com/bnina-ayoub/bnina-ayoub/blob/main/github%20icons/email.png?raw=true)](mailto:bnina.ayoub@etudiant-fst.utm.tn)
 
-- 📫 Reach me on my   [![linkedin](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/0c75d5dd-b34a-4dcb-a28e-48c871b824a7)](https://www.linkedin.com/in/ayoub-bnina/) or my   [![email](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/ab61d9e0-928c-4658-a014-800154107eb0)](bnina.ayoub@etudiant-fst.utm.tn)
+## Microsoft Learn Account :
+[![Microsoft](https://camo.githubusercontent.com/640dd6f33eb2e8bdb206561440b11dc26c47c279ee4c2c9af91e20096a5bd2bb/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6d6963726f736f66742e737667)](https://learn.microsoft.com/fr-fr/users/ayoubbnina/)
 
 ## Languages & Frameworks
 ![RBP](https://camo.githubusercontent.com/7027d600ec17ac3977aaf427063f446c82834cfaab188e9d81f09d8971beb5f9/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f34382f3030303030302f7261737062657272792d70692e706e67) ![icons8-c-programming-512](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/ee4d7a9e-1730-400d-9312-c6cc5cb9de83)                           ![python](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/10cd590c-ace1-4b70-b83e-85bab8fdf638)

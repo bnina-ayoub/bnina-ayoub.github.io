@@ -15,7 +15,7 @@
 
 ## Professional Development :
 [![Microsoft](https://github.com/bnina-ayoub/bnina-ayoub/blob/main/github%20icons/microsoft.png?raw=true)](https://learn.microsoft.com/fr-fr/users/ayoubbnina/)
-[![google cloud](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/f553ee5a-c7e2-4498-878e-fa95cb2393a6)](https://www.cloudskillsboost.google/public_profiles/c6aeef18-b6b4-4546-a231-5cd5661ef5ec)
+[![google cloud](https://github-production-user-asset-6210df.s3.amazonaws.com/94785911/261328860-f553ee5a-c7e2-4498-878e-fa95cb2393a6.png)](https://www.cloudskillsboost.google/public_profiles/c6aeef18-b6b4-4546-a231-5cd5661ef5ec)
 
 
 ## Languages & Frameworks

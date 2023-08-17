@@ -4,7 +4,7 @@
 
 ![iot](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/423824d3-1770-47bc-97e9-3ce3c3ee664e) ![pcb-board](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/90a4547d-b007-4c18-ab09-30606feff434)
 
-## My Interests :  
+## Interested in :  
 
 ![icons8-robotics-64](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/b07dcefa-81b1-4e77-ac0b-207ffef65b40) ![Automation](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/18e64630-14e5-4e33-b821-6349503e22ed) ![DS](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/29f6a5a6-0a67-4c87-aac0-a5e9ab4dca95)
 

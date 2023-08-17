@@ -13,8 +13,10 @@
   
 [![linkedin](https://github.com/bnina-ayoub/bnina-ayoub/blob/main/github%20icons/linkedin.png)](https://www.linkedin.com/in/ayoub-bnina/)     [![email](https://github.com/bnina-ayoub/bnina-ayoub/blob/main/github%20icons/email.png?raw=true)](mailto:bnina.ayoub@etudiant-fst.utm.tn)
 
-## Microsoft Learn Account :
+## Professional Development :
 [![Microsoft](https://github.com/bnina-ayoub/bnina-ayoub/blob/main/github%20icons/microsoft.png?raw=true)](https://learn.microsoft.com/fr-fr/users/ayoubbnina/)
+[![google cloud](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/f553ee5a-c7e2-4498-878e-fa95cb2393a6)](https://www.cloudskillsboost.google/public_profiles/c6aeef18-b6b4-4546-a231-5cd5661ef5ec)
+
 
 ## Languages & Frameworks
 ![RBP](https://camo.githubusercontent.com/7027d600ec17ac3977aaf427063f446c82834cfaab188e9d81f09d8971beb5f9/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f34382f3030303030302f7261737062657272792d70692e706e67) ![icons8-c-programming-512](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/ee4d7a9e-1730-400d-9312-c6cc5cb9de83)                           ![python](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/10cd590c-ace1-4b70-b83e-85bab8fdf638)

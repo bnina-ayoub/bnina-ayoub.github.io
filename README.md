@@ -1,5 +1,7 @@
 # Hi 👋 , I am Ayoub Bnina
 
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=bnina-ayoub)](https://github.com/anuraghazra/github-readme-stats)
+
 ## Bachelor of Computer Engineering specialized in IoT & Embedded Systems
 
 ![iot](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/423824d3-1770-47bc-97e9-3ce3c3ee664e) ![pcb-board](https://github.com/bnina-ayoub/bnina-ayoub/assets/94785911/90a4547d-b007-4c18-ab09-30606feff434)

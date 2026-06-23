@@ -1,0 +1,146 @@
+{
+  "theme": "dark",
+  "archetype": "Performance Pro (Tactical/Defense HUD Variant)",
+  "typography": {
+    "headings": {
+      "fontFamily": "'Chivo', 'Rajdhani', sans-serif",
+      "weights": ["600", "700", "900"],
+      "strategy": "Technical, authoritative, and sharp. Used for section titles and major metrics. Use tight tracking (tracking-tight) to enhance the industrial feel."
+    },
+    "body": {
+      "fontFamily": "'IBM Plex Sans', sans-serif",
+      "weights": ["400", "500"],
+      "strategy": "Clean, highly readable geometric sans for narrative text."
+    },
+    "monospace": {
+      "fontFamily": "'JetBrains Mono', 'IBM Plex Mono', monospace",
+      "weights": ["400", "700"],
+      "strategy": "CRITICAL: Use for all technical data, statistics, dates, coordinates, terminal outputs, and HUD elements."
+    }
+  },
+  "colors": {
+    "background": {
+      "base": "#0E1014",
+      "surface": "#161A20",
+      "surface_highlight": "#1C2128"
+    },
+    "text": {
+      "primary": "#F0F6FC",
+      "secondary": "#8B949E",
+      "muted": "#484F58"
+    },
+    "accents": {
+      "signal_orange": "#FF5722",
+      "tactical_amber": "#FFB000",
+      "hud_green": "#00FF41",
+      "alert_red": "#FF3B30",
+      "graphite_border": "#30363D"
+    },
+    "strategy": "Graphite/charcoal base. NOT pure black. Functional use of color: HUD green for active/healthy states, Signal Orange for primary CTAs/Highlights, Tactical Amber for warnings/ongoing projects. Do not use generic blues or purples."
+  },
+  "layout_and_spacing": {
+    "strategy": "Tactical HUD grids mixed with blueprint schematics.",
+    "spacing_scale": "Generous padding (p-12 to p-24) between sections to let the tactical elements breathe. Dense spacing inside metric cards.",
+    "grid_system": "Bento-style grids for Skills and Projects. Strict column alignments for a 'Control Room' feel. Mode B 'Control Room Grid' strategy.",
+    "borders": "1px solid border-graphite_border (e.g. border-[#30363D]). Expose the skeleton: use grid borders to create a technical/schematic look."
+  },
+  "surfaces_and_components": {
+    "cards": "Flat dark backgrounds (#161A20) with sharp edges or max 4px radius (rounded-sm). 1px stroke borders. No soft drop shadows; use sharp 1px inner glows or neon colored border accents on hover.",
+    "buttons": "Tactical buttons. Primary: Signal Orange background with dark text. Secondary: Transparent with HUD Green or Signal Orange borders and monospace text. Add technical adornments like brackets [ ] around text on hover.",
+    "chips_tags": "Used for tech stack. Very dark background with bright monospace text (e.g., HUD Green on #0E1014) and 1px borders.",
+    "forms": "Minimalist input fields. Bottom border only or sharp rectangular boxes with focus rings in Tactical Amber. No soft rounded corners.",
+    "decorative": "Include schematic line art, target reticles, coordinate labels, hex/binary easter-eggs in corners of containers."
+  },
+  "motion_and_interactions": {
+    "strategy": "Mechanical, precise, and terminal-like. No bouncy or soft animations.",
+    "hero": "Cinematic radar sweep overlay, simulated boot-up terminal sequence (typing effect), drone silhouette scanning.",
+    "scroll": "Smooth scrolling with Lenis. Reveal sections with a sharp, fast fade-in and slight slide-up.",
+    "cursor": "Custom crosshair cursor overlay (subtle) that locks onto or highlights clickable elements.",
+    "hover": "Target-lock animations on project cards. Borders lighting up (Tracing Beam effect) on interactive elements."
+  },
+  "visual_enhancers": {
+    "backgrounds": "Blueprint grid patterns (SVG pattern) overlaid with a subtle scanline effect and film grain (noise).",
+    "icons": "Lucide React with sharp, technical styling. Use crosshairs, radars, terminals, cpu icons.",
+    "image_treatment": "Images should be treated with a dark overlay (bg-black/50), desaturated (grayscale), or colorized with mix-blend modes to match the HUD theme. Avoid bright, standard stock photos without heavy filter application."
+  },
+  "media": {
+    "image_urls": {
+      "drone_silhouette": {
+        "url": "https://images.unsplash.com/photo-1515797855409-08b2b02ccf4a",
+        "description": "Silhouette photo of man holding drone remote",
+        "category": "hero_element"
+      },
+      "drone_sky": {
+        "url": "https://images.unsplash.com/photo-1495811853829-7f743aca3770",
+        "description": "Quadcopter drone in flight",
+        "category": "hero_element_alt"
+      },
+      "radar_screen": {
+        "url": "https://images.pexels.com/photos/3862624/pexels-photo-3862624.jpeg",
+        "description": "Digital cockpit screen with navigation and flight data",
+        "category": "background_texture"
+      },
+      "circuit_board_macro": {
+        "url": "https://images.pexels.com/photos/3520692/pexels-photo-3520692.jpeg",
+        "description": "Detailed black and white photo of a circuit board",
+        "category": "skills_background"
+      },
+      "robotics_arm": {
+        "url": "https://images.pexels.com/photos/8439064/pexels-photo-8439064.jpeg",
+        "description": "Scientist operating a robotic arm",
+        "category": "about_image"
+      }
+    },
+    "instructions_to_main_agent": "Use these images strictly. Apply grayscale or multiply/screen blend modes with amber/green colors to make them look like tactical HUD readouts or night vision feeds."
+  },
+  "sections": [
+    {
+      "name": "Hero",
+      "description": "Cinematic anti-UAV/radar themed animation. Simulated boot-up terminal text greeting ('SYSTEM INITIALIZED...'). Background includes a radar sweep animation, blueprint grid, and drone silhouettes.",
+      "key_elements": ["Terminal type-writer effect", "Radar sweep SVG/CSS animation", "Target lock crosshair"]
+    },
+    {
+      "name": "About",
+      "description": "Personal narrative of Ayoub Bnina. Technical and direct tone. Styled like an operative dossier.",
+      "key_elements": ["Dossier layout", "Scanline image overlay on portrait/robotics image"]
+    },
+    {
+      "name": "Skills",
+      "description": "Grouped into Hardware, Software/RTOS, Protocols, Languages. Displayed as a control room dashboard with interactive chips and progress bars.",
+      "key_elements": ["Bento grid", "Monospace percentage readouts", "HUD Green progress bars"]
+    },
+    {
+      "name": "Experience",
+      "description": "Timeline of internships. Looks like a mission log or event ledger. Includes company, role, dates, tech stack tags.",
+      "key_elements": ["Mission timeline layout", "Monospace dates", "Vertical tracking line"]
+    },
+    {
+      "name": "Projects",
+      "description": "Featured projects (Anti-UAV Target Detection, etc.) and placeholders. Cards look like target profiles with media slots, tech stack tags, and status badges (Ongoing/Completed).",
+      "key_elements": ["Target profile cards", "Status badges (Amber/Green)", "Hover target-lock effect"]
+    },
+    {
+      "name": "Education",
+      "description": "Timeline covering M.Sc. OMU, M2 ENSI, Bachelor ENIT. Styled as data readouts.",
+      "key_elements": ["Data readout layout", "Minimalist timeline"]
+    },
+    {
+      "name": "Awards",
+      "description": "Certifications and awards. Displayed with tactical medal/star iconography.",
+      "key_elements": ["Achievement grid", "Signal Orange icons"]
+    },
+    {
+      "name": "Contact",
+      "description": "Working contact form using a mailto: composer. Social links. Designed like a secure transmission terminal.",
+      "key_elements": ["Terminal-style form inputs", "Secure transmission send button", "Monospace labels"]
+    }
+  ],
+  "accessibility_and_testing": {
+    "testing_attributes": "All interactive and key informational elements MUST include a `data-testid` attribute (e.g., `data-testid=\"contact-submit-button\"`).",
+    "accessibility": "Ensure high contrast for text (WCAG AA). Use aria-labels for form inputs and icon-only buttons."
+  },
+  "technical_constraints": {
+    "hosting": "Static-only (GitHub Pages compatible). No backend API for form (must use mailto:).",
+    "libraries": "Framer Motion for animations, Lucide React for icons, Tailwind CSS for styling."
+  }
+}

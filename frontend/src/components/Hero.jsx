@@ -76,7 +76,7 @@ function RadarVisual() {
           className="absolute left-1/2 top-1/2 h-1/2 w-1/2 origin-top-left"
           style={{
             background:
-              "conic-gradient(from 0deg, rgba(0,255,65,0.55), rgba(0,255,65,0) 60deg)",
+              "conic-gradient(from 0deg at top left, rgba(0,255,65,0.55), rgba(0,255,65,0) 60deg)",
           }}
         />
       </div>

@@ -1,54 +1,63 @@
-import { useEffect } from "react";
-import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-import { HOME } from "@/constants/testIds";
+import "./App.css";
+import { useEffect, useState } from "react";
+import { Toaster } from "sonner";
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Education from "./components/Education";
+import Awards from "./components/Awards";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import HUDStatusBar from "./components/HUDStatusBar";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
+function App() {
+  const [booted, setBooted] = useState(false);
 
   useEffect(() => {
-    helloWorldApi();
+    const t = setTimeout(() => setBooted(true), 200);
+    return () => clearTimeout(t);
   }, []);
 
   return (
-    <div>
-      <header className="App-header">
-        <a
-          data-testid={HOME.emergentLink}
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
-
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+    <div
+      className="App relative min-h-screen overflow-x-hidden bg-graphite-800 text-foreground antialiased"
+      data-testid="app-root"
+    >
+      <div className="pointer-events-none fixed inset-0 z-0 opacity-[0.04] noise" />
+      <Nav />
+      <main
+        className={`relative z-10 transition-opacity duration-700 ${
+          booted ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Education />
+        <Awards />
+        <Contact />
+        <Footer />
+      </main>
+      <HUDStatusBar />
+      <Toaster
+        theme="dark"
+        position="top-right"
+        toastOptions={{
+          style: {
+            background: "#161A20",
+            border: "1px solid #30363D",
+            color: "#F0F6FC",
+            fontFamily: "JetBrains Mono, monospace",
+            fontSize: "12px",
+            borderRadius: "2px",
+          },
+        }}
+      />
     </div>
   );
 }

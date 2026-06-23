@@ -14,6 +14,16 @@
 
 *Bare-metal C · STM32 · RTOS · Anti-UAV vision · Micro-ROS · Quadrupeds · Underwater nodes*
 
+### 🌐 Live site → **[bnina-ayoub.github.io/portfolio](https://bnina-ayoub.github.io/portfolio/)**
+
+[![Live](https://img.shields.io/badge/live-portfolio-FF5722?style=for-the-badge&logo=githubpages&logoColor=white)](https://bnina-ayoub.github.io/portfolio/)
+[![Status](https://img.shields.io/badge/status-online-00FF41?style=for-the-badge)](https://bnina-ayoub.github.io/portfolio/)
+[![Last Deploy](https://img.shields.io/github/actions/workflow/status/bnina-ayoub/portfolio/deploy.yml?branch=main&style=for-the-badge&label=last%20deploy&color=FFB000)](../../actions)
+
+> Deployed automatically from `main` via GitHub Actions on every push.
+> If your repo isn't named `portfolio`, swap the URL above with your actual GitHub Pages link
+> (you can find it under **Settings → Pages** once the first workflow run finishes).
+
 </div>
 
 ---

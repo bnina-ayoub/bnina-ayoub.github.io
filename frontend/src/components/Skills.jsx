@@ -5,25 +5,25 @@ import { Cpu, Code2, Cable, Languages } from "lucide-react";
 const categoryMeta = {
   Hardware: {
     icon: Cpu,
-    code: "HW.NODE",
+    code: "Microcontrollers & boards",
     accent: "text-signal",
     bar: "bg-signal",
   },
   "Software & RTOS": {
     icon: Code2,
-    code: "SW.RTOS",
+    code: "Real-time operating systems",
     accent: "text-hud",
     bar: "bg-hud",
   },
   "Protocols & Tools": {
     icon: Cable,
-    code: "BUS.LINK",
+    code: "Buses & control",
     accent: "text-tactical-amber",
     bar: "bg-tactical-amber",
   },
   Languages: {
     icon: Languages,
-    code: "LANG.PKT",
+    code: "Spoken languages",
     accent: "text-foreground",
     bar: "bg-foreground",
   },
@@ -57,9 +57,9 @@ export default function Skills() {
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <SectionHeader
           index="03"
-          code="SYSTEMS.LOADOUT"
-          title="Systems & Loadout."
-          subtitle="// engineering stack — hardware, RTOS, protocols, languages"
+          code="SKILLS"
+          title="Skills & Tooling."
+          subtitle="Hardware, real-time operating systems, communication protocols and spoken languages."
         />
 
         <div className="grid gap-px bg-graphite-400 lg:grid-cols-2">
@@ -87,7 +87,7 @@ export default function Skills() {
                     </div>
                   </div>
                   <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-                    {skills[cat].length} ENTRIES
+                    {skills[cat].length} items
                   </span>
                 </div>
                 <div className="space-y-5">

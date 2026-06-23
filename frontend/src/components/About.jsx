@@ -1,7 +1,7 @@
 import { profile } from "../data/portfolio";
 import { ShieldCheck, MapPin, GraduationCap, Languages } from "lucide-react";
 
-function SectionHeader({ index, code, title, subtitle }) {
+function SectionHeader({ index, code, title, subtitle, meta }) {
   return (
     <div className="mb-12 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
       <div>
@@ -14,14 +14,16 @@ function SectionHeader({ index, code, title, subtitle }) {
           {title}
         </h2>
         {subtitle && (
-          <p className="mt-3 max-w-xl font-mono text-xs uppercase tracking-[0.22em] text-muted-foreground">
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
             {subtitle}
           </p>
         )}
       </div>
-      <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-        ENCRYPTED · TLS 1.3 · CHANNEL SECURE
-      </div>
+      {meta && (
+        <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
+          {meta}
+        </div>
+      )}
     </div>
   );
 }
@@ -29,10 +31,10 @@ function SectionHeader({ index, code, title, subtitle }) {
 export { SectionHeader };
 
 const dossier = [
-  { label: "ALIAS", value: profile.callsign, icon: ShieldCheck },
-  { label: "BASE", value: profile.location, icon: MapPin },
-  { label: "FOCUS", value: "Embedded · RTOS · Vision", icon: GraduationCap },
-  { label: "LANG", value: "AR / EN / FR / TR", icon: Languages },
+  { label: "Location", value: profile.location, icon: MapPin },
+  { label: "Education", value: "M.Sc. — OMU 2026", icon: GraduationCap },
+  { label: "Focus", value: "Embedded · RTOS · Vision", icon: ShieldCheck },
+  { label: "Languages", value: "AR / EN / FR / TR", icon: Languages },
 ];
 
 export default function About() {
@@ -45,9 +47,9 @@ export default function About() {
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <SectionHeader
           index="02"
-          code="DOSSIER.MD"
-          title="Personnel File."
-          subtitle="// declassified — operator background and engineering doctrine"
+          code="ABOUT"
+          title="About me."
+          subtitle="Engineering doctrine, background and current focus areas."
         />
 
         <div className="grid gap-10 lg:grid-cols-12">
@@ -59,19 +61,19 @@ export default function About() {
               <span className="c br" />
 
               <p className="font-mono text-xs uppercase tracking-[0.22em] text-tactical-amber">
-                / SUBJECT NARRATIVE
+                Bio
               </p>
               <p className="mt-5 text-lg leading-relaxed text-foreground/90">
                 I build the firmware that thinks under pressure. My work lives
                 where milliseconds matter — quadrupeds that need to stay
-                upright, underwater nodes that can't drop a packet, and{" "}
+                upright, underwater nodes that can&apos;t drop a packet, and{" "}
                 <span className="text-signal signal-glow">
                   anti-UAV vision pipelines
                 </span>{" "}
                 that must lock a target before it disappears.
               </p>
               <p className="mt-4 text-base leading-relaxed text-foreground/80">
-                Two-time IEEE RAS national embedded programming winner.
+                Two-time IEEE RAS national embedded programming champion.
                 Currently a{" "}
                 <span className="text-tactical-amber">
                   Türkiye Scholarships (YTB)
@@ -79,7 +81,7 @@ export default function About() {
                 awardee preparing for an M.Sc. in Computer Engineering at
                 Ondokuz Mayıs University, while finishing M2 Research in Smart
                 Systems at ENSI (Tunisia). I write bare-metal C with the same
-                care other people write contracts.
+                discipline other engineers reserve for production deploys.
               </p>
 
               <div className="mt-8 grid gap-px bg-graphite-400 sm:grid-cols-2">
@@ -122,16 +124,16 @@ export default function About() {
                 <div className="absolute inset-0 scanlines opacity-40 mix-blend-overlay" />
                 <div className="absolute inset-0 bg-gradient-to-t from-graphite-900 via-graphite-900/40 to-transparent" />
                 <div className="absolute inset-x-0 top-3 flex justify-between px-3 font-mono text-[10px] uppercase tracking-[0.22em] text-hud">
-                  <span>FEED-01 · IR</span>
+                  <span>Camera Feed</span>
                   <span className="flex items-center gap-1.5">
                     <span className="h-2 w-2 rounded-full bg-alert animate-pulse" />
-                    REC
+                    LIVE
                   </span>
                 </div>
                 <div className="absolute inset-x-0 bottom-4 px-4 font-mono text-[10px] uppercase tracking-[0.22em] text-foreground/80">
-                  <div>SUBJ_ID: 2024-OPER-BNINA</div>
+                  <div>Ayoub Bnina · Samsun, Türkiye</div>
                   <div className="text-tactical-amber">
-                    DESIG: EMBEDDED · ROBOTICS · DEFENSE
+                    Embedded · Robotics · Defense Tech
                   </div>
                 </div>
               </div>

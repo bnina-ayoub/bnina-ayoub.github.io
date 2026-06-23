@@ -14,9 +14,9 @@ export default function HUDStatusBar() {
       <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-1.5 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
         <span className="flex items-center gap-2">
           <span className="h-1.5 w-1.5 rounded-full bg-hud animate-pulse" />
-          OP-STATUS: NOMINAL
+          Available for opportunities
         </span>
-        <span className="hidden md:inline">// THEME: TACTICAL HUD · GRID 24px</span>
+        <span className="hidden md:inline text-muted-foreground/70">Samsun · Türkiye</span>
         <span className="text-tactical-amber">UTC {utc}</span>
       </div>
     </div>

@@ -31,9 +31,9 @@ export default function Awards() {
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <SectionHeader
           index="07"
-          code="DECORATIONS.IDX"
-          title="Decorations & Credentials."
-          subtitle="// honors, certifications and leadership citations"
+          code="AWARDS"
+          title="Awards & Recognition."
+          subtitle="Competitions, scholarships, certifications and leadership roles."
         />
 
         <div className="grid gap-px bg-graphite-400 md:grid-cols-2 lg:grid-cols-3">
@@ -74,16 +74,13 @@ export default function Awards() {
             <Award className="h-8 w-8 text-signal" strokeWidth={1.5} />
             <div>
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-signal">
-                FIELD COMMENDATION
+                Headline Award
               </div>
               <div className="text-base text-foreground">
                 Two-time national champion · IEEE RAS STM32F4 Embedded
-                Programming (2024 & 2025).
+                Programming (2024 &amp; 2025).
               </div>
             </div>
-          </div>
-          <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-tactical-amber">
-            CITATION ID · IEEE-RAS-STM32F4
           </div>
         </div>
       </div>

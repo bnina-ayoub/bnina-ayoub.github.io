@@ -19,9 +19,9 @@ export const profile = {
 };
 
 export const stats = [
-  { label: "AWARDS", value: "02", sub: "STM32 IEEE RAS" },
+  { label: "AWARDS", value: "02", sub: "IEEE RAS · NATIONAL" },
   { label: "INTERNSHIPS", value: "03", sub: "ROBOTICS LABS" },
-  { label: "RTOS", value: "FreeRTOS · ThreadX", sub: "DEPLOYED" },
+  { label: "RTOS DEPLOYED", value: "FreeRTOS · ThreadX", sub: "PRODUCTION" },
   { label: "LANGUAGES", value: "04", sub: "AR · EN · FR · TR" },
 ];
 
@@ -254,12 +254,12 @@ export const awards = [
 ];
 
 export const navLinks = [
-  { id: "hero", label: "01 / HOME" },
-  { id: "about", label: "02 / DOSSIER" },
-  { id: "skills", label: "03 / SYSTEMS" },
-  { id: "experience", label: "04 / MISSIONS" },
-  { id: "projects", label: "05 / TARGETS" },
-  { id: "education", label: "06 / RECORDS" },
-  { id: "awards", label: "07 / MEDALS" },
-  { id: "contact", label: "08 / COMMS" },
+  { id: "hero", label: "01 — Home" },
+  { id: "about", label: "02 — About" },
+  { id: "skills", label: "03 — Skills" },
+  { id: "experience", label: "04 — Experience" },
+  { id: "projects", label: "05 — Projects" },
+  { id: "education", label: "06 — Education" },
+  { id: "awards", label: "07 — Awards" },
+  { id: "contact", label: "08 — Contact" },
 ];

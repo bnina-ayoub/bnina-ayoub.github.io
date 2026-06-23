@@ -24,13 +24,13 @@ export default function Contact() {
       return;
     }
     const subject = encodeURIComponent(
-      form.subject || `[CONTACT] Transmission from ${form.name}`
+      form.subject || `Portfolio enquiry from ${form.name}`
     );
     const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}\n\n— sent via portfolio.bnina //`
+      `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}\n\n— Sent from ayoubbnina.com portfolio`
     );
     window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
-    toast.success("Mail client opened. Transmission ready to send.");
+    toast.success("Mail client opened — the message is ready to send.");
   };
 
   const copyEmail = async () => {
@@ -45,11 +45,11 @@ export default function Contact() {
   };
 
   const channels = [
-    { icon: Mail, label: "EMAIL", value: profile.email, href: `mailto:${profile.email}` },
-    { icon: Phone, label: "VOICE", value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, "")}` },
-    { icon: MapPin, label: "BASE", value: profile.location, href: null },
-    { icon: Linkedin, label: "LINKEDIN", value: "ayoub-bnina", href: profile.linkedin },
-    { icon: Github, label: "GITHUB", value: "bnina-ayoub", href: profile.github },
+    { icon: Mail, label: "Email", value: profile.email, href: `mailto:${profile.email}` },
+    { icon: Phone, label: "Phone", value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, "")}` },
+    { icon: MapPin, label: "Location", value: profile.location, href: null },
+    { icon: Linkedin, label: "LinkedIn", value: "ayoub-bnina", href: profile.linkedin },
+    { icon: Github, label: "GitHub", value: "bnina-ayoub", href: profile.github },
   ];
 
   return (
@@ -61,9 +61,9 @@ export default function Contact() {
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <SectionHeader
           index="08"
-          code="COMMS.CHANNEL"
-          title="Establish Comms."
-          subtitle="// open a secure transmission channel — encrypted via your local mail client"
+          code="CONTACT"
+          title="Get in touch."
+          subtitle="Open to embedded firmware, robotics and defense-tech opportunities — full-time, research, or contract."
         />
 
         <div className="grid gap-6 lg:grid-cols-12">
@@ -76,7 +76,7 @@ export default function Contact() {
               <span className="c br" />
 
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-tactical-amber">
-                AVAILABLE CHANNELS
+                Direct channels
               </div>
               <ul className="mt-4 space-y-3">
                 {channels.map(({ icon: Icon, label, value, href }) => {
@@ -93,7 +93,7 @@ export default function Contact() {
                           {value}
                         </div>
                       </div>
-                      {label === "EMAIL" && (
+                      {label === "Email" && (
                         <button
                           onClick={(e) => {
                             e.preventDefault();
@@ -135,10 +135,12 @@ export default function Contact() {
               </ul>
             </div>
 
-            <div className="border border-graphite-400 bg-graphite-900/70 p-5 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-              <div className="text-hud">// STATUS</div>
+            <div className="border border-graphite-400 bg-graphite-900/70 p-5 text-xs leading-relaxed text-muted-foreground">
+              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-hud">
+                Availability
+              </div>
               <div className="mt-2">
-                Currently in Türkiye (UTC+3). Reply latency typically &lt; 24h on weekdays. Open to embedded firmware, robotics, defense-tech and applied research collaborations.
+                Currently based in Türkiye (UTC+3). Typical reply latency is under 24 hours on weekdays. Open to embedded firmware, robotics, defense-tech and applied research collaborations.
               </div>
             </div>
           </aside>
@@ -156,71 +158,71 @@ export default function Contact() {
 
             <div className="mb-6 flex items-center justify-between border-b border-graphite-400 pb-3">
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-tactical-amber">
-                /channel/secure-tx
+                Send a message
               </div>
               <div className="flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.22em] text-hud">
                 <span className="h-2 w-2 rounded-full bg-hud animate-pulse" />
-                READY
+                Ready
               </div>
             </div>
 
             <div className="grid gap-5 sm:grid-cols-2">
               <Field
-                label="OPERATOR NAME"
+                label="Your name"
                 id="name"
                 required
                 value={form.name}
                 onChange={(v) => setForm({ ...form, name: v })}
-                placeholder="e.g. Cmdr. Vance"
+                placeholder="e.g. Jane Smith"
                 testId="contact-input-name"
               />
               <Field
-                label="RETURN ADDRESS"
+                label="Email address"
                 id="email"
                 type="email"
                 required
                 value={form.email}
                 onChange={(v) => setForm({ ...form, email: v })}
-                placeholder="ops@example.com"
+                placeholder="you@company.com"
                 testId="contact-input-email"
               />
             </div>
             <div className="mt-5">
               <Field
-                label="SUBJECT LINE"
+                label="Subject"
                 id="subject"
                 value={form.subject}
                 onChange={(v) => setForm({ ...form, subject: v })}
-                placeholder="[INQUIRY] STM32 firmware collaboration"
+                placeholder="STM32 firmware collaboration"
                 testId="contact-input-subject"
               />
             </div>
             <div className="mt-5">
               <label className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-                MESSAGE PAYLOAD *
+                Message *
               </label>
               <textarea
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 rows={6}
                 required
-                placeholder="Describe the mission..."
+                placeholder="Tell me a bit about the role or project..."
                 className="mt-1.5 block w-full resize-y border border-graphite-400 bg-graphite-800/80 px-3 py-2.5 font-mono text-sm text-foreground placeholder:text-muted-foreground focus:border-tactical-amber focus:outline-none focus:ring-1 focus:ring-tactical-amber/40"
                 data-testid="contact-input-message"
               />
             </div>
 
             <div className="mt-6 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                * transmission opens local mail client · payload signed
+              <p className="text-xs text-muted-foreground">
+                Submitting opens your default email client with the message pre-filled.
               </p>
               <button
                 type="submit"
-                className="group inline-flex items-center gap-2 border border-signal bg-signal px-6 py-3 font-mono text-xs font-bold uppercase tracking-[0.22em] text-graphite-900 transition-all hover:bg-signal/90"
+                className="group inline-flex items-center gap-2 border border-signal bg-signal px-6 py-3 font-display text-sm font-bold uppercase tracking-[0.18em] text-graphite-900 transition-all hover:bg-signal/90"
                 data-testid="contact-submit-button"
               >
                 <Send className="h-4 w-4" />
-                [ TRANSMIT ]
+                Send Message
               </button>
             </div>
           </form>

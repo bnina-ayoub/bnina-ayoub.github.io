@@ -43,7 +43,7 @@ function ProjectCard({ p }) {
 
         {/* corner labels */}
         <div className="absolute left-3 top-3 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.22em] text-hud">
-          <Target className="h-3 w-3" /> {p.code}
+          <Target className="h-3 w-3" /> P-{p.code.replace("TGT-", "")}
         </div>
         <div
           className={`absolute right-3 top-3 inline-flex items-center gap-1.5 border px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.22em] ${statusStyle[p.status]}`}
@@ -60,21 +60,14 @@ function ProjectCard({ p }) {
           {p.status}
         </div>
 
-        {/* target lock crosshair on hover */}
+        {/* subtle highlight frame on hover */}
         {hover && (
-          <>
-            <div className="absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 border border-signal/80 animate-pulse" />
-            <div className="absolute left-1/2 top-1/2 h-px w-32 -translate-x-1/2 -translate-y-1/2 bg-signal/60" />
-            <div className="absolute left-1/2 top-1/2 h-32 w-px -translate-x-1/2 -translate-y-1/2 bg-signal/60" />
-            <div className="absolute left-1/2 top-1/2 flex h-6 w-6 -translate-x-1/2 -translate-y-1/2 items-center justify-center text-signal">
-              <Crosshair className="h-6 w-6" />
-            </div>
-          </>
+          <div className="pointer-events-none absolute inset-3 border border-signal/60" />
         )}
 
         {p.placeholder && (
           <div className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 border border-graphite-400 bg-graphite-900/80 px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-            <Lock className="h-3 w-3" /> MEDIA PENDING UPLOAD
+            <Lock className="h-3 w-3" /> Media coming soon
           </div>
         )}
       </div>
@@ -82,7 +75,7 @@ function ProjectCard({ p }) {
       {/* Body */}
       <div className="flex flex-1 flex-col p-5 sm:p-6">
         <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-          CLASS: {p.classification}
+          {p.classification.replace(" / ", " · ")}
         </div>
         <h3 className="mt-2 font-display text-xl font-bold leading-tight text-foreground sm:text-2xl">
           {p.name}
@@ -133,9 +126,9 @@ export default function Projects() {
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <SectionHeader
           index="05"
-          code="TARGET.PROFILES"
-          title="Target Profiles."
-          subtitle="// featured projects — defense, robotics, real-time control systems"
+          code="PROJECTS"
+          title="Featured Projects."
+          subtitle="Selected work in defense vision, real-time control and embedded robotics. Media for some projects is being prepared."
         />
 
         <div className="grid gap-6 md:grid-cols-2">
@@ -145,13 +138,13 @@ export default function Projects() {
         </div>
 
         <div className="mt-10 flex items-center justify-between border-t border-graphite-400 pt-6 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-          <span>// MEDIA UPLOAD MODULE OFFLINE · STATIC BUILD</span>
+          <span>Project media will be added progressively</span>
           <a
             href="#contact"
             className="inline-flex items-center gap-1 text-signal hover:text-tactical-amber"
             data-testid="projects-request-media-cta"
           >
-            REQUEST FULL DOSSIER <ArrowUpRight className="h-3 w-3" />
+            Request full details <ArrowUpRight className="h-3 w-3" />
           </a>
         </div>
       </div>

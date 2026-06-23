@@ -3,12 +3,11 @@ import { profile, stats } from "../data/portfolio";
 import { ArrowDownRight, Cpu, Radar, Target, Activity } from "lucide-react";
 
 const bootLines = [
-  "> initializing tactical interface ...",
-  "> loading personnel dossier ...",
-  "> handshake [DDS]: OK",
-  "> handshake [MICRO-ROS]: OK",
-  "> linking STM32 / NXP nodes ...",
-  "> sweep online — welcome, operator.",
+  "> initializing portfolio interface ...",
+  "> loading project archive ...",
+  "> compiling firmware showcase ...",
+  "> linking embedded systems ...",
+  "> ready.",
 ];
 
 function Typewriter({ lines }) {
@@ -143,14 +142,14 @@ export default function Hero() {
           {/* meta strip */}
           <div className="mb-8 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
             <span className="flex items-center gap-2">
-              <span className="h-2 w-2 bg-hud" /> STATUS: {profile.status}
+              <span className="h-2 w-2 bg-hud" /> Available for opportunities
             </span>
-            <span>LAT/LON: {profile.coords}</span>
-            <span>CLEARANCE: {profile.clearance}</span>
+            <span>YTB Scholar · 2026</span>
+            <span className="text-tactical-amber">2× IEEE RAS Champion</span>
           </div>
 
           <p className="mb-4 font-mono text-xs uppercase tracking-[0.32em] text-signal">
-            // DOSSIER — OPERATOR PROFILE
+            // Embedded Firmware & Robotics Engineer
           </p>
 
           <h1
@@ -178,19 +177,19 @@ export default function Hero() {
             <a
               href="#projects"
               data-testid="hero-cta-projects"
-              className="group inline-flex items-center gap-2 border border-signal bg-signal px-6 py-3 font-mono text-xs font-bold uppercase tracking-[0.22em] text-graphite-900 transition-all hover:bg-signal/90"
+              className="group inline-flex items-center gap-2 border border-signal bg-signal px-6 py-3 font-display text-sm font-bold uppercase tracking-[0.18em] text-graphite-900 transition-all hover:bg-signal/90"
             >
               <Target className="h-4 w-4" />
-              [ VIEW TARGETS ]
+              View Projects
               <ArrowDownRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
             </a>
             <a
               href="#contact"
               data-testid="hero-cta-contact"
-              className="inline-flex items-center gap-2 border border-graphite-400 bg-transparent px-6 py-3 font-mono text-xs font-bold uppercase tracking-[0.22em] text-foreground transition-all hover:border-hud hover:text-hud"
+              className="inline-flex items-center gap-2 border border-graphite-400 bg-transparent px-6 py-3 font-display text-sm font-bold uppercase tracking-[0.18em] text-foreground transition-all hover:border-hud hover:text-hud"
             >
               <Radar className="h-4 w-4" />
-              [ OPEN CHANNEL ]
+              Get in Touch
             </a>
           </div>
 
@@ -246,7 +245,7 @@ export default function Hero() {
               <div
                 key={s.label}
                 className="bg-graphite-900/80 p-4"
-                data-testid={`hero-stat-${s.label.toLowerCase()}`}
+                data-testid={`hero-stat-${s.label.toLowerCase().replace(/\s+/g, "-")}`}
               >
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">

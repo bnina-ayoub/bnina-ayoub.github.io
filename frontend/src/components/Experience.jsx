@@ -12,9 +12,9 @@ export default function Experience() {
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <SectionHeader
           index="04"
-          code="MISSION.LOG"
-          title="Mission Log."
-          subtitle="// chronological deployment record — embedded robotics field work"
+          code="EXPERIENCE"
+          title="Experience."
+          subtitle="Internships and applied engineering work across robotics labs in Tunisia."
         />
 
         <div className="relative">
@@ -40,7 +40,7 @@ export default function Experience() {
 
                   <div className="flex flex-wrap items-center gap-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
                     <span className="text-tactical-amber">
-                      LOG-{String(i + 1).padStart(2, "0")}
+                      {String(i + 1).padStart(2, "0")}
                     </span>
                     <span className="h-px w-6 bg-graphite-400" />
                     <span>

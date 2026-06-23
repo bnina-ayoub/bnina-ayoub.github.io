@@ -236,7 +236,7 @@ export default function FloatingScene() {
     >
       {/* layer 1 — deep traces (slow parallax) */}
       <div
-        className="absolute inset-0 opacity-[0.16] transition-transform duration-700 ease-out"
+        className="absolute inset-0 opacity-[0.10] transition-transform duration-700 ease-out"
         style={{ transform: `translate3d(${mouse.x * 10}px, ${mouse.y * 10}px, 0)` }}
       >
         <Traces />
@@ -244,7 +244,7 @@ export default function FloatingScene() {
 
       {/* layer 2 — PCBs (mid parallax) */}
       <div
-        className="absolute inset-0 opacity-[0.22] transition-transform duration-500 ease-out"
+        className="absolute inset-0 opacity-[0.14] transition-transform duration-500 ease-out"
         style={{ transform: `translate3d(${mouse.x * -22}px, ${mouse.y * -18}px, 0)` }}
       >
         <svg className="absolute h-full w-full" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
@@ -258,7 +258,7 @@ export default function FloatingScene() {
 
       {/* layer 3 — drones (fast parallax) */}
       <div
-        className="absolute inset-0 opacity-[0.35] transition-transform duration-300 ease-out"
+        className="absolute inset-0 opacity-[0.22] transition-transform duration-300 ease-out"
         style={{ transform: `translate3d(${mouse.x * -38}px, ${mouse.y * -30}px, 0)` }}
       >
         <svg className="absolute h-full w-full" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
@@ -270,14 +270,14 @@ export default function FloatingScene() {
       </div>
 
       {/* PWM tracks (no parallax — feel like instrument readouts pinned to viewport) */}
-      <div className="absolute inset-0 opacity-[0.35]">
+      <div className="absolute inset-0 opacity-[0.22]">
         <PWMTrack top="14%" color="#00FF41" dur="12s" label="// CH1 · PWM · TIM3 · 50Hz" />
         <PWMTrack top="68%" color="#FFB000" dur="9s" label="// CH2 · UART · 115200 8N1" />
         <PWMTrack top="88%" color="#FF5722" dur="14s" label="// CH3 · SPI · 10MHz" />
       </div>
 
       {/* rising binary bits */}
-      <div className="absolute inset-0 opacity-60">
+      <div className="absolute inset-0 opacity-40">
         <BitStream />
       </div>
 

@@ -18,9 +18,9 @@ export default function Education() {
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <SectionHeader
           index="06"
-          code="ACADEMIC.RECORDS"
-          title="Academic Records."
-          subtitle="// formation history — degrees and active research programs"
+          code="EDUCATION"
+          title="Education."
+          subtitle="Active research and graduate work in computer engineering and intelligent systems."
         />
 
         <div className="grid gap-px bg-graphite-400 md:grid-cols-3">
@@ -31,7 +31,7 @@ export default function Education() {
               data-testid={`education-${edu.id}`}
             >
               <div className="mb-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-                <span>REC-{String(i + 1).padStart(2, "0")}</span>
+                <span>{String(i + 1).padStart(2, "0")}</span>
                 <span
                   className={`inline-flex items-center gap-1.5 border px-2 py-0.5 ${statusStyle[edu.status]}`}
                 >
@@ -63,7 +63,7 @@ export default function Education() {
               </div>
               <div className="mt-5 border-t border-graphite-400 pt-4">
                 <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-tactical-amber">
-                  DEGREE
+                  Degree
                 </div>
                 <div className="mt-1 text-sm text-foreground/90">
                   {edu.degree}

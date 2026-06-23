@@ -51,10 +51,10 @@ export default function Nav() {
           </span>
           <span className="flex flex-col leading-none">
             <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-              CALLSIGN
+              Embedded Engineer
             </span>
-            <span className="font-mono text-sm font-bold text-foreground">
-              {profile.callsign}
+            <span className="font-display text-sm font-bold text-foreground">
+              Ayoub Bnina
             </span>
           </span>
         </button>
@@ -94,14 +94,14 @@ export default function Nav() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-hud opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-hud" />
             </span>
-            ONLINE
+            Available
           </span>
           <button
             onClick={() => go("contact")}
             className="border border-signal bg-signal/10 px-4 py-2 font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-signal transition-all hover:bg-signal hover:text-graphite-900"
             data-testid="nav-contact-cta"
           >
-            [ ESTABLISH COMMS ]
+            Contact Me
           </button>
         </div>
 
@@ -137,7 +137,7 @@ export default function Nav() {
               className="mt-3 w-full border border-signal bg-signal/10 px-4 py-3 font-mono text-xs font-bold uppercase tracking-[0.2em] text-signal"
               data-testid="nav-mobile-contact-cta"
             >
-              [ ESTABLISH COMMS ]
+              Contact Me
             </button>
           </div>
         </div>

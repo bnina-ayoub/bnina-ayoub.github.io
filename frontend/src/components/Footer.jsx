@@ -16,26 +16,25 @@ export default function Footer() {
               </span>
               <div>
                 <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-                  CALLSIGN
+                  Embedded Engineer
                 </div>
-                <div className="font-mono text-sm font-bold text-foreground">
-                  {profile.callsign}
+                <div className="font-display text-sm font-bold text-foreground">
+                  Ayoub Bnina
                 </div>
               </div>
             </div>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-              Built from first principles — bare-metal C, real-time control,
-              and one too many coffees. Static deployment ready for GitHub
-              Pages.
+              Embedded firmware and robotics engineer focused on RTOS, anti-UAV vision and real-time control systems. Open to opportunities worldwide.
             </p>
           </div>
 
-          <div className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            <div className="text-hud">// COORDINATES</div>
+          <div className="text-xs leading-relaxed text-muted-foreground">
+            <div className="font-mono uppercase tracking-[0.22em] text-hud">
+              Contact
+            </div>
             <div className="mt-2 text-foreground">{profile.location}</div>
-            <div>{profile.coords}</div>
-            <div className="mt-2">{profile.phone}</div>
-            <div>{profile.email}</div>
+            <div className="mt-1">{profile.phone}</div>
+            <div className="mt-1">{profile.email}</div>
           </div>
 
           <div className="flex items-start justify-start gap-3 lg:justify-end">
@@ -70,14 +69,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-graphite-400 pt-6 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground sm:flex-row sm:items-center">
+        <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-graphite-400 pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
           <span>
-            © {new Date().getFullYear()} {profile.name} · ALL TRANSMISSIONS LOGGED
+            © {new Date().getFullYear()} {profile.name} · Designed &amp; built by Ayoub Bnina
           </span>
-          <span className="flex items-center gap-3">
-            <span>BUILD: STATIC · v1.0</span>
-            <span className="h-1 w-1 rounded-full bg-graphite-400" />
-            <span className="text-hud">SYS: NOMINAL</span>
+          <span className="flex items-center gap-3 font-mono uppercase tracking-[0.22em]">
+            <span className="flex items-center gap-1.5 text-hud">
+              <span className="h-1.5 w-1.5 rounded-full bg-hud animate-pulse" />
+              Available for opportunities
+            </span>
           </span>
         </div>
       </div>

@@ -71,12 +71,12 @@ function RadarVisual() {
       <div className="absolute inset-x-0 top-1/2 h-px bg-graphite-400/60" />
       <div className="absolute inset-y-0 left-1/2 w-px bg-graphite-400/60" />
       {/* Sweep */}
-      <div className="absolute inset-0 animate-radar-sweep origin-center">
+      <div className="absolute inset-0 animate-radar-sweep origin-center rounded-full overflow-hidden">
         <div
-          className="absolute left-1/2 top-1/2 h-1/2 w-1/2 origin-top-left"
+          className="absolute inset-0"
           style={{
             background:
-              "conic-gradient(from 0deg at top left, rgba(0,255,65,0.55), rgba(0,255,65,0) 60deg)",
+              "conic-gradient(from 0deg at 50% 50%, rgba(0,255,65,0.55) 0deg, rgba(0,255,65,0) 60deg, transparent 360deg)",
           }}
         />
       </div>

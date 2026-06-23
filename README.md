@@ -14,7 +14,7 @@
 
 *Bare-metal C · STM32 · RTOS · Anti-UAV vision · Micro-ROS · Quadrupeds · Underwater nodes*
 
-### 🌐 Live site → **[bnina-ayoub.github.io/portfolio](https://bnina-ayoub.github.io)**
+### 🌐 Live site → **[bnina-ayoub.github.io](https://bnina-ayoub.github.io/)**
 
 [![Live](https://img.shields.io/badge/live-portfolio-FF5722?style=for-the-badge&logo=githubpages&logoColor=white)](https://bnina-ayoub.github.io/portfolio/)
 [![Status](https://img.shields.io/badge/status-online-00FF41?style=for-the-badge)](https://bnina-ayoub.github.io/portfolio/)

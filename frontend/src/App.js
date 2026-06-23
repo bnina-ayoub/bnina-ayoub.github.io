@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import { Toaster } from "sonner";
 import Nav from "./components/Nav";
+import FloatingScene from "./components/FloatingScene";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -27,6 +28,7 @@ function App() {
       data-testid="app-root"
     >
       <div className="pointer-events-none fixed inset-0 z-0 opacity-[0.04] noise" />
+      <FloatingScene />
       <Nav />
       <main
         className={`relative z-10 transition-opacity duration-700 ${

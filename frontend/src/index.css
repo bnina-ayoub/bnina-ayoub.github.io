@@ -205,6 +205,75 @@
     background: #ff5722;
 }
 
+/* Floating Scene keyframes */
+@keyframes floatPCB {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(14px, -22px);
+    }
+}
+@keyframes droneCrossLR {
+    0% {
+        transform: translate(-12vw, 0) rotate(-2deg);
+    }
+    100% {
+        transform: translate(118vw, -8vh) rotate(2deg);
+    }
+}
+@keyframes droneCrossRL {
+    0% {
+        transform: translate(118vw, 0) rotate(178deg);
+    }
+    100% {
+        transform: translate(-12vw, -6vh) rotate(182deg);
+    }
+}
+@keyframes rotorSpin {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(0.15);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+@keyframes pwmScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-900px);
+    }
+}
+@keyframes traceSignal {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -1200;
+    }
+}
+@keyframes bitRise {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    8% {
+        opacity: 0.85;
+    }
+    92% {
+        opacity: 0.85;
+    }
+    100% {
+        transform: translateY(-105vh);
+        opacity: 0;
+    }
+}
+
 @layer base {
     [data-debug-wrapper="true"] {
         display: contents !important;

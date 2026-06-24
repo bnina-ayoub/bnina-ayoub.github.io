@@ -8,7 +8,7 @@
 └──────────────────────────────────────────────────────────────┘
 ```
 
-# `// AYOUB BNINA`
+# `AYOUB BNINA`
 
 **Digital dossier of an Embedded Firmware & Robotics Engineer.**
 

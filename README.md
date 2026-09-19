@@ -4,7 +4,6 @@
 ┌──────────────────────────────────────────────────────────────┐
 │  CALLSIGN: AYOUB BNINA         STATUS: OPERATIONAL           │
 │  ROLE: EMBEDDED ROBOTICS                                     │
-│  CLEARANCE: YTB SCHOLAR · INCOMING M.Sc. — OMU 2026          │
 └──────────────────────────────────────────────────────────────┘
 ```
 

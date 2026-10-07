@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Ayoub Bnina — Robotics, Embedded Systems & AI Engineering Portfolio">
+<title>Ayoub Bnina — Robotics • Embedded • AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080a0d;--panel:#101419;--panel2:#0c1014;--text:#f2f5f7;--muted:#9da7b1;--line:#252c34;--accent:#a8ff60;--accent2:#65d9ff;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#142019 0,transparent 32%),var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 26px}
+nav{position:sticky;top:0;z-index:10;background:rgba(8,10,13,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.03em}.brand span{color:var(--accent)}
+.links{display:flex;gap:26px;color:var(--muted);font-size:14px}.links a:hover{color:var(--text)}
+.hero{padding:110px 0 80px;display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:end}
+.kicker{font:500 12px "DM Mono",monospace;color:var(--accent);letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(48px,7vw,88px);line-height:.96;letter-spacing:-.065em;margin:18px 0 28px;max-width:900px}
+.lead{font-size:20px;color:#c3cbd2;max-width:720px}.cta{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{padding:12px 17px;border:1px solid var(--line);border-radius:10px;font-weight:700;font-size:14px}.btn.primary{background:var(--accent);color:#0a0d09;border-color:var(--accent)}.btn:hover{transform:translateY(-1px)}
+.hero-card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#121820,#0b0e12);padding:24px;min-height:250px}
+.terminal{font:13px/1.8 "DM Mono",monospace;color:#aeb9c3}.terminal b{color:var(--accent)}.terminal .cyan{color:var(--accent2)}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:12px 0 100px}.metric{border-top:1px solid var(--line);padding:18px 0}.metric strong{display:block;font-size:28px;letter-spacing:-.04em}.metric span{color:var(--muted);font-size:12px}
+section{padding:85px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}.eyebrow{font:500 11px "DM Mono",monospace;color:var(--accent2);text-transform:uppercase;letter-spacing:.14em}h2{font-size:42px;line-height:1.05;letter-spacing:-.05em;margin:8px 0 0}.section-note{color:var(--muted);max-width:460px;font-size:14px}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel);transition:.25s}.project:hover{transform:translateY(-4px);border-color:#3a444e}.visual{height:245px;background:#0b0e12;position:relative;overflow:hidden}.visual img,.visual video{width:100%;height:100%;object-fit:cover;display:block}.visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.55))}
+.project-body{padding:23px}.project-top{display:flex;justify-content:space-between;gap:12px;align-items:start}.project h3{font-size:24px;line-height:1.1;margin:0;letter-spacing:-.035em}.num{font:12px "DM Mono";color:var(--muted)}.project p{color:var(--muted);font-size:14px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin:17px 0}.tag{font:11px "DM Mono";border:1px solid #2b343d;padding:5px 8px;border-radius:999px;color:#b8c1c9}.project-link{display:inline-flex;gap:8px;font-weight:700;font-size:13px;color:var(--accent)}
+.feature{grid-column:1/-1}.feature .visual{height:390px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:28px}.panel h3{margin:0 0 16px;font-size:21px}.panel p,.panel li{color:var(--muted);font-size:14px}.skills{display:flex;flex-wrap:wrap;gap:9px}.skill{padding:9px 11px;background:#0b0f13;border:1px solid var(--line);border-radius:9px;font:12px "DM Mono"}
+.timeline{display:grid;gap:12px}.row{display:grid;grid-template-columns:170px 1fr;gap:25px;padding:18px 0;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}.row b{font-size:13px}.row span{color:var(--muted);font-size:14px}
+footer{padding:60px 0 80px;display:flex;justify-content:space-between;gap:25px;color:var(--muted);font-size:13px}.footer-title{color:var(--text);font-weight:800;font-size:19px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:70px}.metrics{grid-template-columns:repeat(2,1fr)}.projects,.split{grid-template-columns:1fr}.feature .visual{height:260px}.links{display:none}.row{grid-template-columns:1fr;gap:4px}h2{font-size:34px}footer{display:block}.footer-title{margin-bottom:15px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin"><a class="brand" href="#">AYOUB<span>.</span></a><div class="links"><a href="#work">Work</a><a href="#stack">Stack</a><a href="#approach">Approach</a><a href="#contact">Contact</a></div></div></nav>
+
+<main>
+<section style="border:0;padding-top:0"><div class="wrap hero">
+<div>
+<div class="kicker">Robotics • Embedded Systems • AI</div>
+<h1>Engineering intelligent systems that move, see & respond.</h1>
+<p class="lead">A project-driven portfolio spanning real-time computer vision, autonomous robotics, embedded firmware, reinforcement learning and connected IoT systems.</p>
+<div class="cta">
+<a class="btn primary" href="#work">Explore selected work ↓</a>
+<a class="btn" href="https://github.com/bnina-ayoub" target="_blank" rel="noreferrer">GitHub ↗</a>
+</div>
+</div>
+<div class="hero-card"><div class="terminal">
+<div><b>~/ayoub</b> $ ./profile</div>
+<div>&nbsp;</div>
+<div><span class="cyan">focus</span> = robotics + edge AI</div>
+<div><span class="cyan">systems</span> = ROS 2 / MCU / IoT</div>
+<div><span class="cyan">vision</span> = detection / tracking</div>
+<div><span class="cyan">control</span> = PID / RL</div>
+<div><span class="cyan">deployment</span> = TensorRT / simulation</div>
+<div>&nbsp;</div>
+<div><b>status</b> = building useful machines_</div>
+</div></div>
+</div></section>
+
+<div class="wrap metrics">
+<div class="metric"><strong>121.6 FPS</strong><span>AeroTrack benchmark</span></div>
+<div class="metric"><strong>8.35 ms</strong><span>HIL pipeline latency</span></div>
+<div class="metric"><strong>85.1%</strong><span>IDF1 in swarm tracking</span></div>
+<div class="metric"><strong>6</strong><span>featured engineering projects</span></div>
+</div>
+
+<section id="work"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">01 / Selected work</div><h2>Projects built end-to-end.</h2></div><div class="section-note">The portfolio emphasizes systems where software meets hardware, perception, control or physical-world constraints.</div></div>
+<div class="projects">
+
+<article class="project feature"><div class="visual"><img src="https://github.com/user-attachments/assets/ed0c6273-1881-48b2-9d87-7b29abdd126c" alt="Autonomous C-UAS HIL simulation"></div><div class="project-body"><div class="project-top"><h3>Autonomous C-UAS HIL</h3><span class="num">01</span></div><p>A ROS 2 + NVIDIA Isaac Sim hardware-in-the-loop digital twin connecting AeroTrack perception to closed-loop pan/tilt actuation for counter-UAV swarm tracking.</p><div class="tags"><span class="tag">ROS 2</span><span class="tag">Isaac Sim</span><span class="tag">TensorRT</span><span class="tag">PID Control</span><span class="tag">NWD</span><span class="tag">Visual Servoing</span></div><a class="project-link" href="https://github.com/bnina-ayoub/Autonomous-CUAS-HIL" target="_blank">View repository ↗</a></div></article>
+
+<article class="project"><div class="visual"><img src="https://raw.githubusercontent.com/bnina-ayoub/AeroTrack/main/docs/assets/aerotrack_main_arch.png" alt="AeroTrack architecture"></div><div class="project-body"><div class="project-top"><h3>AeroTrack</h3><span class="num">02</span></div><p>Edge-oriented UAV multi-object tracking with dynamic early-exit routing, IoU/NWD association and a dual-engine TensorRT deployment path.</p><div class="tags"><span class="tag">YOLOX</span><span class="tag">ByteTrack</span><span class="tag">NWD</span><span class="tag">TensorRT</span><span class="tag">PyTorch</span></div><a class="project-link" href="https://github.com/bnina-ayoub/AeroTrack" target="_blank">View repository ↗</a></div></article>
+
+<article class="project"><div class="visual"><video muted autoplay loop playsinline controls poster=""><source src="https://github.com/bnina-ayoub/Embedded-Home-Assistant/assets/94785911/ada95bb3-01bc-45d4-914c-ad9630b7cc33"></video></div><div class="project-body"><div class="project-top"><h3>JARVIS Home Assistant</h3><span class="num">03</span></div><p>Voice-controlled IoT system combining natural-language interaction, speech recognition/synthesis, ESP32 hardware and smart-home actuation.</p><div class="tags"><span class="tag">Python</span><span class="tag">ESP32</span><span class="tag">IoT</span><span class="tag">LLM</span><span class="tag">Azure Speech</span><span class="tag">Firestore</span></div><a class="project-link" href="https://github.com/bnina-ayoub/JARVIS-Home-Assistant" target="_blank">View repository ↗</a></div></article>
+
+<article class="project"><div class="visual"><video muted autoplay loop playsinline><source src="https://github.com/nimazareian/quadruped-rl-locomotion/assets/28585597/262b7812-0b8f-4758-aedd-a429f743fb69"></video></div><div class="project-body"><div class="project-top"><h3>Quadruped RL Locomotion</h3><span class="num">04</span></div><p>Reinforcement-learning locomotion experiments in MuJoCo using a custom Gymnasium environment for the Unitree Go1, covering torque and position-control policies.</p><div class="tags"><span class="tag">Reinforcement Learning</span><span class="tag">MuJoCo</span><span class="tag">Gymnasium</span><span class="tag">Unitree Go1</span><span class="tag">Python</span></div><a class="project-link" href="https://github.com/bnina-ayoub/quadruped-rl-locomotion" target="_blank">View repository ↗</a></div></article>
+
+<article class="project"><div class="visual" style="display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#24351e,#0b0e12 65%)"><div style="font:600 70px 'DM Mono';color:#a8ff60">⌁</div></div><div class="project-body"><div class="project-top"><h3>Intelligent Surveillance & Access Control</h3><span class="num">05</span></div><p>An intelligent surveillance/access-control project demonstrating applied computer vision and security-oriented automation.</p><div class="tags"><span class="tag">Computer Vision</span><span class="tag">Surveillance</span><span class="tag">Access Control</span><span class="tag">AI</span></div><a class="project-link" href="https://github.com/bnina-ayoub/Intelligent-surveillance-access-control-System-" target="_blank">View repository ↗</a></div></article>
+
+<article class="project"><div class="visual" style="display:grid;place-items:center;background:linear-gradient(135deg,#111820,#0b0e12)"><div style="font:500 18px 'DM Mono';color:#65d9ff">GPIO / REG / BITWISE</div></div><div class="project-body"><div class="project-top"><h3>STM32F4 GPIO Driver</h3><span class="num">06</span></div><p>A low-level embedded-C GPIO driver demonstrating peripheral clocking, pin configuration, register manipulation, masking and bitwise operations.</p><div class="tags"><span class="tag">C</span><span class="tag">STM32F4</span><span class="tag">Embedded</span><span class="tag">Registers</span><span class="tag">Drivers</span></div><a class="project-link" href="https://github.com/bnina-ayoub/stm32f4_gpio_driver" target="_blank">View repository ↗</a></div></article>
+</div></div></section>
+
+<section id="stack"><div class="wrap"><div class="section-head"><div><div class="eyebrow">02 / Technical stack</div><h2>From registers to neural networks.</h2></div></div>
+<div class="split">
+<div class="panel"><h3>AI & Robotics</h3><div class="skills"><span class="skill">Computer Vision</span><span class="skill">Object Tracking</span><span class="skill">PyTorch</span><span class="skill">YOLOX</span><span class="skill">ByteTrack</span><span class="skill">Reinforcement Learning</span><span class="skill">MuJoCo</span><span class="skill">ROS 2</span><span class="skill">NVIDIA Isaac Sim</span><span class="skill">TensorRT</span></div></div>
+<div class="panel"><h3>Embedded & Systems</h3><div class="skills"><span class="skill">C / C++</span><span class="skill">Python</span><span class="skill">STM32</span><span class="skill">ESP32</span><span class="skill">PlatformIO</span><span class="skill">GPIO Drivers</span><span class="skill">IoT</span><span class="skill">Firestore</span><span class="skill">PID Control</span><span class="skill">Linux</span></div></div>
+</div></div></section>
+
+<section id="approach"><div class="wrap"><div class="section-head"><div><div class="eyebrow">03 / Engineering approach</div><h2>Measure it. Simulate it. Deploy it.</h2></div><div class="section-note">The projects show a consistent systems mindset: isolate the hard part, benchmark it, then connect it to the rest of the stack.</div></div>
+<div class="timeline">
+<div class="row"><b>PERCEPTION</b><span>Design tracking and recognition pipelines around real-time constraints rather than treating inference as an isolated model.</span></div>
+<div class="row"><b>OPTIMIZATION</b><span>Use early-exit routing, FP16 TensorRT engines and lightweight association methods when latency and compute matter.</span></div>
+<div class="row"><b>CONTROL</b><span>Close the loop with explicit control logic — including PID-based visual servoing and learned locomotion policies.</span></div>
+<div class="row"><b>EMBEDDED</b><span>Work down to the peripheral level, including STM32 GPIO configuration, register operations and ESP32-connected devices.</span></div>
+<div class="row"><b>VALIDATION</b><span>Use simulation and measurable benchmarks to validate behavior before physical deployment.</span></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="panel" style="padding:42px"><div class="eyebrow">04 / Contact</div><h2 style="max-width:760px;margin-top:12px">Interested in building robots, edge-AI systems or embedded products?</h2><p style="color:var(--muted);max-width:650px">The fastest way to explore the implementation is through the repositories below.</p><div class="cta"><a class="btn primary" href="https://github.com/bnina-ayoub" target="_blank">github.com/bnina-ayoub ↗</a><a class="btn" href="mailto:bninayoub.pro@gmail.com">Email ↗</a></div></div></div></section>
+</main>
+<footer class="wrap"><div><div class="footer-title">Ayoub Bnina</div><div>Robotics • Embedded Systems • AI</div></div><div>Built around real engineering work · 2026</div></footer>
+</body></html>

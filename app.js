@@ -111,7 +111,7 @@
   const phrases = [
     'Zephyr RTOS Upstream Silicon Contributor (NXP MCXA eQDC)',
     'AeroTrack C-UAS HIL Architect · 130.7 FPS / 2.9 ms BCET',
-    'TEKNOFEST · Team OMU Sungur Embedded Systems Engineer',
+    'Team Leader · TEKNOFEST Team OMÜ SUNGUR',
     'IEEE Sensors Journal Manuscript · Currently Under Review',
     'STM32 · NXP MCX · FreeRTOS · ThreadX · ROS 2 / micro-ROS'
   ];
@@ -643,9 +643,9 @@
       'PRs       : zephyrproject-rtos/zephyr #111927 (MERGED) &amp; #111977 (FRDM-MCXA156)'
     ],
     teknofest: () => [
-      '<span class="cmd-warn">ACTIVE MISSION: TEKNOFEST · TEAM OMU SUNGUR</span>',
+      '<span class="cmd-warn">ACTIVE MISSION: TEAM LEADER · TEKNOFEST TEAM OMÜ SUNGUR</span>',
       'Location  : Ondokuz Mayıs University (Enerji İstasyonu &amp; 3B Üretim Lab)',
-      'Focus     : Flight-grade RTOS firmware, HIL verification &amp; onboard perception'
+      'Focus     : Leading flight-grade RTOS firmware, HIL verification &amp; onboard perception'
     ],
     awards: () => [
       '<span class="cmd-ok">PODIUM RECORD:</span>',

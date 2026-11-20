@@ -1,105 +1,1141 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Ayoub Bnina — Robotics, Embedded Systems & AI Engineering Portfolio">
-<title>Ayoub Bnina — Robotics • Embedded • AI</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#080a0d;--panel:#101419;--panel2:#0c1014;--text:#f2f5f7;--muted:#9da7b1;--line:#252c34;--accent:#a8ff60;--accent2:#65d9ff;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#142019 0,transparent 32%),var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.55}
-a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 26px}
-nav{position:sticky;top:0;z-index:10;background:rgba(8,10,13,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
-.navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.03em}.brand span{color:var(--accent)}
-.links{display:flex;gap:26px;color:var(--muted);font-size:14px}.links a:hover{color:var(--text)}
-.hero{padding:110px 0 80px;display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:end}
-.kicker{font:500 12px "DM Mono",monospace;color:var(--accent);letter-spacing:.14em;text-transform:uppercase}
-h1{font-size:clamp(48px,7vw,88px);line-height:.96;letter-spacing:-.065em;margin:18px 0 28px;max-width:900px}
-.lead{font-size:20px;color:#c3cbd2;max-width:720px}.cta{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
-.btn{padding:12px 17px;border:1px solid var(--line);border-radius:10px;font-weight:700;font-size:14px}.btn.primary{background:var(--accent);color:#0a0d09;border-color:var(--accent)}.btn:hover{transform:translateY(-1px)}
-.hero-card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#121820,#0b0e12);padding:24px;min-height:250px}
-.terminal{font:13px/1.8 "DM Mono",monospace;color:#aeb9c3}.terminal b{color:var(--accent)}.terminal .cyan{color:var(--accent2)}
-.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:12px 0 100px}.metric{border-top:1px solid var(--line);padding:18px 0}.metric strong{display:block;font-size:28px;letter-spacing:-.04em}.metric span{color:var(--muted);font-size:12px}
-section{padding:85px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}.eyebrow{font:500 11px "DM Mono",monospace;color:var(--accent2);text-transform:uppercase;letter-spacing:.14em}h2{font-size:42px;line-height:1.05;letter-spacing:-.05em;margin:8px 0 0}.section-note{color:var(--muted);max-width:460px;font-size:14px}
-.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel);transition:.25s}.project:hover{transform:translateY(-4px);border-color:#3a444e}.visual{height:245px;background:#0b0e12;position:relative;overflow:hidden}.visual img,.visual video{width:100%;height:100%;object-fit:cover;display:block}.visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.55))}
-.project-body{padding:23px}.project-top{display:flex;justify-content:space-between;gap:12px;align-items:start}.project h3{font-size:24px;line-height:1.1;margin:0;letter-spacing:-.035em}.num{font:12px "DM Mono";color:var(--muted)}.project p{color:var(--muted);font-size:14px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin:17px 0}.tag{font:11px "DM Mono";border:1px solid #2b343d;padding:5px 8px;border-radius:999px;color:#b8c1c9}.project-link{display:inline-flex;gap:8px;font-weight:700;font-size:13px;color:var(--accent)}
-.feature{grid-column:1/-1}.feature .visual{height:390px}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:28px}.panel h3{margin:0 0 16px;font-size:21px}.panel p,.panel li{color:var(--muted);font-size:14px}.skills{display:flex;flex-wrap:wrap;gap:9px}.skill{padding:9px 11px;background:#0b0f13;border:1px solid var(--line);border-radius:9px;font:12px "DM Mono"}
-.timeline{display:grid;gap:12px}.row{display:grid;grid-template-columns:170px 1fr;gap:25px;padding:18px 0;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}.row b{font-size:13px}.row span{color:var(--muted);font-size:14px}
-footer{padding:60px 0 80px;display:flex;justify-content:space-between;gap:25px;color:var(--muted);font-size:13px}.footer-title{color:var(--text);font-weight:800;font-size:19px}
-@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:70px}.metrics{grid-template-columns:repeat(2,1fr)}.projects,.split{grid-template-columns:1fr}.feature .visual{height:260px}.links{display:none}.row{grid-template-columns:1fr;gap:4px}h2{font-size:34px}footer{display:block}.footer-title{margin-bottom:15px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayoub Bnina — Embedded Robotics, RTOS Firmware & Real-Time Autonomy</title>
+  <meta name="description" content="Engineering portfolio of Ayoub Bnina: Embedded Robotics, Zephyr/FreeRTOS/ThreadX Firmware, Counter-UAS Sim-to-Real HIL Autonomy, ROS 2/micro-ROS, and Edge AI.">
+  <link rel="icon" type="image/jpeg" href="assets/images/avatar.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav><div class="wrap navin"><a class="brand" href="#">AYOUB<span>.</span></a><div class="links"><a href="#work">Work</a><a href="#stack">Stack</a><a href="#approach">Approach</a><a href="#contact">Contact</a></div></div></nav>
 
-<main>
-<section style="border:0;padding-top:0"><div class="wrap hero">
-<div>
-<div class="kicker">Robotics • Embedded Systems • AI</div>
-<h1>Engineering intelligent systems that move, see & respond.</h1>
-<p class="lead">A project-driven portfolio spanning real-time computer vision, autonomous robotics, embedded firmware, reinforcement learning and connected IoT systems.</p>
-<div class="cta">
-<a class="btn primary" href="#work">Explore selected work ↓</a>
-<a class="btn" href="https://github.com/bnina-ayoub" target="_blank" rel="noreferrer">GitHub ↗</a>
-</div>
-</div>
-<div class="hero-card"><div class="terminal">
-<div><b>~/ayoub</b> $ ./profile</div>
-<div>&nbsp;</div>
-<div><span class="cyan">focus</span> = robotics + edge AI</div>
-<div><span class="cyan">systems</span> = ROS 2 / MCU / IoT</div>
-<div><span class="cyan">vision</span> = detection / tracking</div>
-<div><span class="cyan">control</span> = PID / RL</div>
-<div><span class="cyan">deployment</span> = TensorRT / simulation</div>
-<div>&nbsp;</div>
-<div><b>status</b> = building useful machines_</div>
-</div></div>
-</div></section>
+  <!-- ================= STICKY AVIONICS HUD NAVIGATION ================= -->
+  <header class="hud-nav">
+    <div class="wrap hud-nav-inner">
+      <a class="brand" href="#top">
+        <img class="brand-emblem" src="assets/images/avatar.jpg" alt="Ayoub Bnina Emblem">
+        <div class="brand-text">
+          <div class="brand-name">AYOUB BNINA<span> // ENG</span></div>
+          <div class="brand-sub">RTOS · C-UAS HIL · EMBEDDED AUTONOMY</div>
+        </div>
+      </a>
 
-<div class="wrap metrics">
-<div class="metric"><strong>121.6 FPS</strong><span>AeroTrack benchmark</span></div>
-<div class="metric"><strong>8.35 ms</strong><span>HIL pipeline latency</span></div>
-<div class="metric"><strong>85.1%</strong><span>IDF1 in swarm tracking</span></div>
-<div class="metric"><strong>6</strong><span>featured engineering projects</span></div>
-</div>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#aerotrack"><span>01</span>AeroTrack</a>
+        <a href="#teknofest"><span>02</span>Teknofest</a>
+        <a href="#systems"><span>03</span>Systems</a>
+        <a href="#career"><span>04</span>Career</a>
+        <a href="#arena"><span>05</span>Arena</a>
+        <a href="#credentials"><span>06</span>Stack</a>
+        <a href="#contact"><span>07</span>Comms</a>
+      </nav>
 
-<section id="work"><div class="wrap">
-<div class="section-head"><div><div class="eyebrow">01 / Selected work</div><h2>Projects built end-to-end.</h2></div><div class="section-note">The portfolio emphasizes systems where software meets hardware, perception, control or physical-world constraints.</div></div>
-<div class="projects">
+      <div class="nav-telemetry">
+        <div class="clock-pill" title="Türkiye Local Time (TRT / UTC+3)">
+          <span class="pulse-dot"></span>
+          <span id="hudClock">TRT --:--:--</span>
+          <span style="color:var(--muted)">|</span>
+          <span id="hudScroll">00%</span>
+        </div>
+        <a class="btn btn-primary btn-sm" href="Ayoub_Bnina_Engineering_Portfolio.pdf" download>↓ PDF Dossier</a>
+      </div>
+    </div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+  </header>
 
-<article class="project feature"><div class="visual"><img src="https://github.com/user-attachments/assets/ed0c6273-1881-48b2-9d87-7b29abdd126c" alt="Autonomous C-UAS HIL simulation"></div><div class="project-body"><div class="project-top"><h3>Autonomous C-UAS HIL</h3><span class="num">01</span></div><p>A ROS 2 + NVIDIA Isaac Sim hardware-in-the-loop digital twin connecting AeroTrack perception to closed-loop pan/tilt actuation for counter-UAV swarm tracking.</p><div class="tags"><span class="tag">ROS 2</span><span class="tag">Isaac Sim</span><span class="tag">TensorRT</span><span class="tag">PID Control</span><span class="tag">NWD</span><span class="tag">Visual Servoing</span></div><a class="project-link" href="https://github.com/bnina-ayoub/Autonomous-CUAS-HIL" target="_blank">View repository ↗</a></div></article>
+  <main id="top">
+    <!-- ================= HERO & LIVE TACTICAL RADAR HUD ================= -->
+    <section class="hero" style="border-top:0">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-left">
+            <div class="status-strip">
+              <span class="pulse-dot"></span>
+              SYS: NOMINAL // EMBEDDED · AVIONICS · AUTONOMY — SAMSUN, TÜRKİYE
+            </div>
+            <h1>
+              Deterministic Firmware.<br>
+              <span class="hl-cyan">Real-Time Autonomy.</span>
+            </h1>
+            <p class="hero-sub">
+              Embedded Robotics &amp; Perception Engineer bridging <strong>photorealistic Sim-to-Real simulation</strong> with
+              <strong>bare-metal &amp; RTOS actuation</strong> across <strong>STM32, NXP MCX, NVIDIA Jetson, Zephyr RTOS, FreeRTOS, ThreadX, and ROS 2 / micro-ROS</strong>.
+              Upstream <strong>Zephyr Project</strong> silicon driver contributor, <strong>Türkiye Bursları (YTB)</strong> MSc Scholar at Ondokuz Mayıs University, and <strong>TEKNOFEST (Team OMU Sungur)</strong> robotics engineer.
+            </p>
 
-<article class="project"><div class="visual"><img src="https://raw.githubusercontent.com/bnina-ayoub/AeroTrack/main/docs/assets/aerotrack_main_arch.png" alt="AeroTrack architecture"></div><div class="project-body"><div class="project-top"><h3>AeroTrack</h3><span class="num">02</span></div><p>Edge-oriented UAV multi-object tracking with dynamic early-exit routing, IoU/NWD association and a dual-engine TensorRT deployment path.</p><div class="tags"><span class="tag">YOLOX</span><span class="tag">ByteTrack</span><span class="tag">NWD</span><span class="tag">TensorRT</span><span class="tag">PyTorch</span></div><a class="project-link" href="https://github.com/bnina-ayoub/AeroTrack" target="_blank">View repository ↗</a></div></article>
+            <div class="hero-badges">
+              <span class="badge lime">✓ Zephyr RTOS Upstream Contributor</span>
+              <span class="badge amber">◉ IEEE Sensors Journal (Under Review)</span>
+              <span class="badge cyan">✈ TEKNOFEST · Team OMU Sungur</span>
+              <span class="badge">🇹🇷 YTB Scholar · TR / EN / FR / AR</span>
+            </div>
 
-<article class="project"><div class="visual"><video muted autoplay loop playsinline controls poster=""><source src="https://github.com/bnina-ayoub/Embedded-Home-Assistant/assets/94785911/ada95bb3-01bc-45d4-914c-ad9630b7cc33"></video></div><div class="project-body"><div class="project-top"><h3>JARVIS Home Assistant</h3><span class="num">03</span></div><p>Voice-controlled IoT system combining natural-language interaction, speech recognition/synthesis, ESP32 hardware and smart-home actuation.</p><div class="tags"><span class="tag">Python</span><span class="tag">ESP32</span><span class="tag">IoT</span><span class="tag">LLM</span><span class="tag">Azure Speech</span><span class="tag">Firestore</span></div><a class="project-link" href="https://github.com/bnina-ayoub/JARVIS-Home-Assistant" target="_blank">View repository ↗</a></div></article>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#aerotrack">Inspect AeroTrack HIL ↓</a>
+              <a class="btn btn-lime" href="Ayoub_Bnina_Engineering_Portfolio.pdf" target="_blank" rel="noreferrer">Download A4 PDF ↗</a>
+              <a class="btn" href="https://github.com/bnina-ayoub" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a class="btn" href="https://www.linkedin.com/in/ayoub-bnina" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            </div>
+          </div>
 
-<article class="project"><div class="visual"><video muted autoplay loop playsinline><source src="https://github.com/nimazareian/quadruped-rl-locomotion/assets/28585597/262b7812-0b8f-4758-aedd-a429f743fb69"></video></div><div class="project-body"><div class="project-top"><h3>Quadruped RL Locomotion</h3><span class="num">04</span></div><p>Reinforcement-learning locomotion experiments in MuJoCo using a custom Gymnasium environment for the Unitree Go1, covering torque and position-control policies.</p><div class="tags"><span class="tag">Reinforcement Learning</span><span class="tag">MuJoCo</span><span class="tag">Gymnasium</span><span class="tag">Unitree Go1</span><span class="tag">Python</span></div><a class="project-link" href="https://github.com/bnina-ayoub/quadruped-rl-locomotion" target="_blank">View repository ↗</a></div></article>
+          <!-- RIGHT: LIVE INTERACTIVE C-UAS RADAR SCOPE & OPERATOR CARD -->
+          <div class="hud-box hero-console">
+            <div class="console-header">
+              <span>C-UAS TELEMETRY SCOPE // AEROTRACK-HIL</span>
+              <div class="console-mode-btns">
+                <button class="mode-btn active" id="modeEarlyExit" type="button">P3-EXIT</button>
+                <button class="mode-btn" id="modeFull" type="button">FULL-FPN</button>
+              </div>
+            </div>
 
-<article class="project"><div class="visual" style="display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#24351e,#0b0e12 65%)"><div style="font:600 70px 'DM Mono';color:#a8ff60">⌁</div></div><div class="project-body"><div class="project-top"><h3>Intelligent Surveillance & Access Control</h3><span class="num">05</span></div><p>An intelligent surveillance/access-control project demonstrating applied computer vision and security-oriented automation.</p><div class="tags"><span class="tag">Computer Vision</span><span class="tag">Surveillance</span><span class="tag">Access Control</span><span class="tag">AI</span></div><a class="project-link" href="https://github.com/bnina-ayoub/Intelligent-surveillance-access-control-System-" target="_blank">View repository ↗</a></div></article>
+            <div class="radar-stage">
+              <canvas id="radarCanvas" aria-label="Interactive Counter-UAS Swarm Radar HUD"></canvas>
+              <div class="radar-overlay-tl">
+                <div>MODE: <span id="hudModeLabel">P3 DYNAMIC GATE</span></div>
+                <div>COMPUTE: <span id="hudFlops">13.46 GFLOPs</span></div>
+                <div>LOCK: <span id="hudLockId">SWARM-04 [NWD]</span></div>
+              </div>
+              <div class="radar-overlay-tr">
+                <div>FPS: <span id="hudFps">130.7</span></div>
+                <div>BCET: <span id="hudLat">2.9 ms</span></div>
+                <div>IDF1: 85.1%</div>
+              </div>
+              <div class="radar-overlay-bl">
+                <div>BUS: micro-ROS → UART DMA → LPUART</div>
+                <div>RTOS: FreeRTOS + Zephyr eQDC</div>
+              </div>
+              <div class="radar-overlay-br">
+                <div id="hudCursor">AZ 000° · EL +00°</div>
+                <div>MOVE CURSOR TO TRACK</div>
+              </div>
+            </div>
 
-<article class="project"><div class="visual" style="display:grid;place-items:center;background:linear-gradient(135deg,#111820,#0b0e12)"><div style="font:500 18px 'DM Mono';color:#65d9ff">GPIO / REG / BITWISE</div></div><div class="project-body"><div class="project-top"><h3>STM32F4 GPIO Driver</h3><span class="num">06</span></div><p>A low-level embedded-C GPIO driver demonstrating peripheral clocking, pin configuration, register manipulation, masking and bitwise operations.</p><div class="tags"><span class="tag">C</span><span class="tag">STM32F4</span><span class="tag">Embedded</span><span class="tag">Registers</span><span class="tag">Drivers</span></div><a class="project-link" href="https://github.com/bnina-ayoub/stm32f4_gpio_driver" target="_blank">View repository ↗</a></div></article>
-</div></div></section>
+            <div class="operator-strip">
+              <img class="operator-photo" src="assets/images/portrait.jpg" alt="Ayoub Bnina Portrait">
+              <div class="operator-meta">
+                <div class="meta-cell">
+                  <span>Base Location</span>
+                  <strong>Samsun, Türkiye</strong>
+                </div>
+                <div class="meta-cell">
+                  <span>Current Program</span>
+                  <strong>MSc CompEng · OMU</strong>
+                </div>
+                <div class="meta-cell">
+                  <span>Languages</span>
+                  <strong>AR · FR(C2) · EN(C1) · TR(C1)</strong>
+                </div>
+                <div class="meta-cell">
+                  <span>Direct Contact</span>
+                  <strong>bninayoub.pro@gmail.com</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<section id="stack"><div class="wrap"><div class="section-head"><div><div class="eyebrow">02 / Technical stack</div><h2>From registers to neural networks.</h2></div></div>
-<div class="split">
-<div class="panel"><h3>AI & Robotics</h3><div class="skills"><span class="skill">Computer Vision</span><span class="skill">Object Tracking</span><span class="skill">PyTorch</span><span class="skill">YOLOX</span><span class="skill">ByteTrack</span><span class="skill">Reinforcement Learning</span><span class="skill">MuJoCo</span><span class="skill">ROS 2</span><span class="skill">NVIDIA Isaac Sim</span><span class="skill">TensorRT</span></div></div>
-<div class="panel"><h3>Embedded & Systems</h3><div class="skills"><span class="skill">C / C++</span><span class="skill">Python</span><span class="skill">STM32</span><span class="skill">ESP32</span><span class="skill">PlatformIO</span><span class="skill">GPIO Drivers</span><span class="skill">IoT</span><span class="skill">Firestore</span><span class="skill">PID Control</span><span class="skill">Linux</span></div></div>
-</div></div></section>
+        <!-- TELEMETRY KPI STRIP -->
+        <div class="kpi-strip">
+          <div class="kpi-card">
+            <div class="kpi-label">AeroTrack Throughput</div>
+            <div class="kpi-val cyan">130.7 FPS</div>
+            <div class="kpi-sub">2.9 ms min latency · −52.3% GFLOPs</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">C-UAS HIL Loop</div>
+            <div class="kpi-val">8.35 ms</div>
+            <div class="kpi-sub">85.1% IDF1 · Dual-Engine TensorRT</div>
+          </div>
+          <div class="kpi-card lime">
+            <div class="kpi-label">Upstream Open Source</div>
+            <div class="kpi-val lime">Zephyr PR</div>
+            <div class="kpi-sub">NXP MCXA eQDC Sensor Driver Merged</div>
+          </div>
+          <div class="kpi-card amber">
+            <div class="kpi-label">Competition Record</div>
+            <div class="kpi-val amber">4× Podium</div>
+            <div class="kpi-sub">1st &amp; 2nd ECPC · 3rd ECPP · 3/5 TWISE</div>
+          </div>
+          <div class="kpi-card amber">
+            <div class="kpi-label">Peer-Review Research</div>
+            <div class="kpi-val">IEEE Sensors</div>
+            <div class="kpi-sub">Submitted Manuscript · Under Review</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="approach"><div class="wrap"><div class="section-head"><div><div class="eyebrow">03 / Engineering approach</div><h2>Measure it. Simulate it. Deploy it.</h2></div><div class="section-note">The projects show a consistent systems mindset: isolate the hard part, benchmark it, then connect it to the rest of the stack.</div></div>
-<div class="timeline">
-<div class="row"><b>PERCEPTION</b><span>Design tracking and recognition pipelines around real-time constraints rather than treating inference as an isolated model.</span></div>
-<div class="row"><b>OPTIMIZATION</b><span>Use early-exit routing, FP16 TensorRT engines and lightweight association methods when latency and compute matter.</span></div>
-<div class="row"><b>CONTROL</b><span>Close the loop with explicit control logic — including PID-based visual servoing and learned locomotion policies.</span></div>
-<div class="row"><b>EMBEDDED</b><span>Work down to the peripheral level, including STM32 GPIO configuration, register operations and ESP32-connected devices.</span></div>
-<div class="row"><b>VALIDATION</b><span>Use simulation and measurable benchmarks to validate behavior before physical deployment.</span></div>
-</div></div></section>
+    <!-- ================= 01 / FLAGSHIP: AEROTRACK & C-UAS HIL ================= -->
+    <section id="aerotrack">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="sec-eyebrow">01 // Flagship Architecture &amp; Research</div>
+            <h2>AeroTrack: End-to-End Counter-UAS HIL Stack</h2>
+          </div>
+          <p class="sec-note">
+            A distributed Sim-to-Real visual-servoing architecture uniting dynamic early-exit deep learning with deterministic bare-metal RTOS actuation across 4 synchronized nodes.
+          </p>
+        </div>
 
-<section id="contact"><div class="wrap"><div class="panel" style="padding:42px"><div class="eyebrow">04 / Contact</div><h2 style="max-width:760px;margin-top:12px">Interested in building robots, edge-AI systems or embedded products?</h2><p style="color:var(--muted);max-width:650px">The fastest way to explore the implementation is through the repositories below.</p><div class="cta"><a class="btn primary" href="https://github.com/bnina-ayoub" target="_blank">github.com/bnina-ayoub ↗</a><a class="btn" href="mailto:bninayoub.pro@gmail.com">Email ↗</a></div></div></div></section>
-</main>
-<footer class="wrap"><div><div class="footer-title">Ayoub Bnina</div><div>Robotics • Embedded Systems • AI</div></div><div>Built around real engineering work · 2026</div></footer>
-</body></html>
+        <div class="paper-banner">
+          <div class="paper-banner-left">
+            <span class="paper-pill">IEEE Sensors Journal · Under Review</span>
+            <div class="paper-title">
+              <strong>AeroTrack: Active Perception and Closed-Loop Control for UAV Swarm Tracking</strong>
+              <span>— Defended ENSI Research Master's Thesis (Sep 2026) · Adaptive Early-Exit Inference &amp; NWD Association in Photorealistic HIL Simulation</span>
+            </div>
+          </div>
+          <a class="btn btn-sm" href="https://github.com/bnina-ayoub/AeroTrack" target="_blank" rel="noreferrer">AeroTrack Repo ↗</a>
+        </div>
+
+        <!-- INTERACTIVE 4-NODE HIL ARCHITECTURE EXPLORER -->
+        <div class="hud-box hil-pipeline">
+          <div class="sec-eyebrow" style="margin-bottom:12px">Interactive Signal Chain — Click Any Node To Inspect Bus &amp; Firmware</div>
+          <div class="hil-nodes" id="hilNodes">
+            <button class="hil-node active" type="button" data-node="0">
+              <div class="node-step"><span>NODE 01</span><span>SIM / ROS 2</span></div>
+              <div class="node-title">Isaac Sim Digital Twin</div>
+              <div class="node-hw">NVIDIA Isaac Sim · ROS 2</div>
+              <div class="node-bus">20-UAV kamikaze swarm + synthetic RGB telemetry</div>
+            </button>
+            <button class="hil-node" type="button" data-node="1">
+              <div class="node-step"><span>NODE 02</span><span>PERCEPTION</span></div>
+              <div class="node-title">AeroTrack TensorRT</div>
+              <div class="node-hw">FP16 Dual-Engine · NWD</div>
+              <div class="node-bus">P3 early-exit gate · 13.46 vs 28.24 GFLOPs</div>
+            </button>
+            <button class="hil-node" type="button" data-node="2">
+              <div class="node-step"><span>NODE 03</span><span>GATEWAY MCU</span></div>
+              <div class="node-title">STM32F4 micro-ROS</div>
+              <div class="node-hw">FreeRTOS · UART DMA</div>
+              <div class="node-bus">/anti_uav/joint_command → 8-byte DMA bridge</div>
+            </button>
+            <button class="hil-node" type="button" data-node="3">
+              <div class="node-step"><span>NODE 04</span><span>ACTUATION MCU</span></div>
+              <div class="node-title">NXP FRDM-MCXA Zephyr</div>
+              <div class="node-hw">Zephyr RTOS · eQDC · PWM</div>
+              <div class="node-bus">LPUART ISR → 4:1/3:1 geared stepper PID loop</div>
+            </button>
+          </div>
+
+          <div class="hil-inspector" id="hilInspector">
+            <!-- Populated dynamically by app.js -->
+          </div>
+        </div>
+
+        <!-- LIVE DEMO VIDEO MONITOR + BENCHMARKS & DIAGRAMS -->
+        <div class="flagship-split">
+          <div class="hud-box video-monitor">
+            <div class="monitor-bar">
+              <span class="rec-tag">HIL FEED // AEROTRACK_DEMO.MP4</span>
+              <span>20-UAV SWARM · SIM + PHYSICAL TURRET SYNC</span>
+            </div>
+            <div class="monitor-screen" data-lightbox-video="assets/videos/aerotrack-demo.mp4" data-lightbox-title="AeroTrack C-UAS Hardware-in-the-Loop Live Demo" data-lightbox-caption="Simultaneous 20-UAV swarm tracking in NVIDIA Isaac Sim (top-left), photorealistic pan-tilt digital twin (center), and physical STM32 + NXP FRDM turret executing real-time closed-loop velocity commands (bottom-right).">
+              <img src="assets/images/posters/aerotrack-demo.jpg" alt="AeroTrack HIL Live Demo Poster">
+              <div class="play-overlay">
+                <span class="play-btn">▶ PLAY LIVE HIL DEMO (41s)</span>
+              </div>
+            </div>
+            <div class="monitor-footer">
+              <p>
+                <strong>Closed-Loop Visual Servoing:</strong> Asymmetrical PID (velocity pan / bounded position tilt) + EMA smoothing (α = 0.60) eliminates micro-jitter and actuator resonance at <strong>119.8 FPS / 8.35 ms</strong> end-to-end.
+              </p>
+              <a class="btn btn-sm" href="https://github.com/bnina-ayoub/Autonomous-CUAS-HIL" target="_blank" rel="noreferrer">HIL Repo ↗</a>
+            </div>
+          </div>
+
+          <div class="hud-box bench-panel">
+            <div class="bench-head">
+              <h3>Paper Benchmarks (Table V)</h3>
+              <div class="seg-toggle" id="benchToggle">
+                <button type="button" class="active" data-target="workstation">Workstation RTX</button>
+                <button type="button" data-target="jetson">Jetson Edge</button>
+              </div>
+            </div>
+
+            <table class="bench-table" id="benchTable">
+              <!-- Populated by app.js -->
+            </table>
+
+            <div class="gain-bars" id="benchGains">
+              <!-- Populated by app.js -->
+            </div>
+
+            <div class="arch-thumb-grid">
+              <div class="zoom-thumb contain" data-lightbox-img="assets/images/aerotrack-arch.png" data-lightbox-title="AeroTrack Architecture — P3 Dynamic Early-Exit Backbone" data-lightbox-caption="YOLOX CSP-ECA backbone with P3/stride8 decoupled early-exit head and routing gate bypassing deep P4/P5 computation on clear sky / confident tiny UAV frames (28.24 → 13.46 GFLOPs).">
+                <img src="assets/images/aerotrack-arch.png" alt="AeroTrack Architecture Diagram">
+                <div class="zoom-cap">Zoom Paper Architecture ⤢</div>
+              </div>
+              <div class="zoom-thumb dark-bg" data-lightbox-img="assets/images/aerotrack-hardware-thesis.jpg" data-lightbox-title="Physical Pan-Tilt Turret &amp; ENSI Research Thesis" data-lightbox-caption="Physical 3D-printed pan-tilt turret, STM32/NXP electronics rig, and defended ENSI Research Master's Thesis: AeroTrack Active Perception and Closed-Loop Control for UAV Swarm Tracking.">
+                <img src="assets/images/aerotrack-hardware-thesis.jpg" alt="Physical C-UAS Hardware Rig and Thesis">
+                <div class="zoom-cap">Physical Rig + Thesis ⤢</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 02 / ACTIVE MISSION: TEKNOFEST TEAM OMU SUNGUR ================= -->
+    <section id="teknofest">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="sec-eyebrow">02 // Active Mission — Türkiye</div>
+            <h2>TEKNOFEST · Team OMU Sungur</h2>
+          </div>
+          <p class="sec-note">
+            Currently preparing in Samsun, Türkiye with Ondokuz Mayıs University's aerospace &amp; robotics competition squad — taking embedded firmware and real-time autonomy from lab prototypes to competition-ready hardware.
+          </p>
+        </div>
+
+        <div class="hud-box accent-amber teknofest-card">
+          <div>
+            <div class="mission-tag">● ACTIVE DEPLOYMENT // SAMSUN, TÜRKİYE</div>
+            <h3>Building Next-Gen Autonomous Systems in the Heart of Türkiye's Defense Ecosystem</h3>
+            <p>
+              Alongside my MSc in Computer Engineering at Ondokuz Mayıs University (fully funded by Türkiye Scholarships / YTB), I am actively contributing to <strong>Team OMU Sungur</strong> in preparation for <strong>TEKNOFEST</strong> — collaborating on embedded avionics, real-time control loops, and onboard perception inside OMU's dedicated engineering lab.
+            </p>
+            <ul class="mission-bullets">
+              <li><strong>Flight-Critical Firmware Mindset:</strong> Applying deterministic RTOS scheduling (Zephyr / FreeRTOS), hardware-in-the-loop verification, and sensor fusion directly to competition hardware.</li>
+              <li><strong>Dedicated Prototyping Workshop:</strong> Hands-on hardware bring-up, power instrumentation, bench testing, and rapid 3D/laser fabrication inside OMU's <em>Enerji İstasyonu</em> engineering facility.</li>
+              <li><strong>Full Cultural &amp; Technical Integration:</strong> Fluent in <strong>Turkish (C1)</strong>, English (C1), French (C2), and Arabic — ready to integrate immediately with Turkish aerospace &amp; defense R&amp;D teams.</li>
+            </ul>
+          </div>
+
+          <div class="teknofest-photos">
+            <div class="tf-photo-main" data-lightbox-img="assets/images/teknofest-akinci.jpg" data-lightbox-title="TEKNOFEST Team OMU Sungur — Bayraktar AKINCI Monument" data-lightbox-caption="Team OMU Sungur standing beneath the Baykar Bayraktar AKINCI UCAV monument in Türkiye while preparing our autonomous systems stack for TEKNOFEST.">
+              <img src="assets/images/teknofest-akinci.jpg" alt="Team OMU Sungur in front of Bayraktar AKINCI UCAV">
+              <div class="photo-hud-label">
+                <strong>TEAM OMU SUNGUR // BAYRAKTAR AKINCI</strong>
+                <span>ZOOM ⤢</span>
+              </div>
+            </div>
+            <div class="tf-photo-sub" data-lightbox-img="assets/images/teknofest-workshop.jpg" data-lightbox-title="OMU Engineering Workshop — Enerji İstasyonu &amp; Fabrication Lab" data-lightbox-caption="Our active hardware integration and fabrication workspace (Enerji İstasyonu / Lazer & 3B Üretim) at Ondokuz Mayıs University for TEKNOFEST prototyping and bench validation.">
+              <img src="assets/images/teknofest-workshop.jpg" alt="OMU Sungur Workshop Space">
+              <div class="photo-hud-label">
+                <strong>OMU WORKSHOP // ENERJİ İSTASYONU &amp; 3B ÜRETİM</strong>
+                <span>ZOOM ⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 03 / ENGINEERING SYSTEMS, FIRMWARE & LIVE DEMOS ================= -->
+    <section id="systems">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="sec-eyebrow">03 // Systems, Firmware &amp; Hardware Demos</div>
+            <h2>Engineered From Silicon Registers to Edge AI</h2>
+          </div>
+          <p class="sec-note">
+            Every system below is backed by real code, hardware bring-up, oscilloscope/SWV traces, or upstream kernel PRs. Click any video card to watch the real bench demo.
+          </p>
+        </div>
+
+        <div class="filter-bar" id="projectFilters">
+          <button class="filter-btn active" type="button" data-filter="all">All Systems [9]</button>
+          <button class="filter-btn" type="button" data-filter="rtos">RTOS &amp; Drivers</button>
+          <button class="filter-btn" type="button" data-filter="cuas">C-UAS &amp; Robotics</button>
+          <button class="filter-btn" type="button" data-filter="protocols">Bare-Metal &amp; Buses</button>
+          <button class="filter-btn" type="button" data-filter="edge">Edge AI &amp; IoT</button>
+        </div>
+
+        <div class="systems-grid" id="systemsGrid">
+          <!-- 01: ZEPHYR UPSTREAM DRIVER (FEATURED SPAN-2) -->
+          <article class="hud-box accent-lime sys-card span-2" data-cat="rtos protocols">
+            <div class="sys-media" data-lightbox-video="assets/videos/eqdc-demo.mp4" data-lightbox-title="Upstream Zephyr RTOS Driver — NXP MCXA eQDC Live Hardware Test" data-lightbox-caption="Physical NXP FRDM-MCXA156 streaming real-time RPM (12,500+ RPM) and absolute encoder tick position via the co-developed Zephyr Sensor API eQDC driver.">
+              <span class="media-pill lime">UPSTREAM MERGED · ZEPHYR RTOS</span>
+              <img src="assets/images/posters/eqdc-demo.jpg" alt="Zephyr RTOS NXP MCXA eQDC Live Hardware Demo">
+              <div class="play-overlay">
+                <span class="play-btn">▶ WATCH LIVE FRDM-MCXA156 DEMO</span>
+              </div>
+            </div>
+            <div class="sys-body">
+              <div class="sys-top">
+                <h3>The Zephyr Project — Upstream NXP MCXA eQDC Sensor Driver</h3>
+                <span class="sys-id">PR #111927 / #111977</span>
+              </div>
+              <p>
+                Native Zephyr RTOS support for the Enhanced Quadrature Decoder (eQDC) peripheral on NXP MCXA silicon was missing. Collaborated directly with an NXP Semiconductors engineer to co-develop the hardware abstraction wrapper binding NXP MCUXpresso HAL + INPUTMUX to the standard Zephyr Sensor API — exposing rotation, RPM, encoder counts, and revolutions across FRDM-MCXA153/156/266/344/346/366 boards. Hardware-verified on physical FRDM-MCXA156 silicon.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Zephyr RTOS</span>
+                <span class="tag">NXP MCXA156</span>
+                <span class="tag">MCUXpresso HAL</span>
+                <span class="tag">DeviceTree / Kconfig</span>
+                <span class="tag">INPUTMUX</span>
+                <span class="tag">Sensor API</span>
+                <span class="tag">Embedded C</span>
+              </div>
+              <div class="sys-actions">
+                <button class="link-arrow play-link" type="button" data-lightbox-video="assets/videos/eqdc-demo.mp4" data-lightbox-title="Zephyr RTOS NXP MCXA eQDC Live Demo" data-lightbox-caption="Real-time RPM and absolute encoder position telemetry streamed from FRDM-MCXA156 over UART.">▶ Play Bench Video</button>
+                <a class="link-arrow" href="https://github.com/zephyrproject-rtos/zephyr/pull/111927" target="_blank" rel="noreferrer">Merged Upstream PR #111927 ↗</a>
+                <a class="link-arrow" href="https://github.com/zephyrproject-rtos/zephyr/pull/111977" target="_blank" rel="noreferrer">Hardware PR #111977 ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02: C-UAS DISTRIBUTED FIRMWARE (STM32 + ZEPHYR) -->
+          <article class="hud-box sys-card" data-cat="rtos cuas">
+            <div class="sys-media" data-lightbox-img="assets/images/aerotrack-hardware-thesis.jpg" data-lightbox-title="Distributed C-UAS Turret Firmware Rig" data-lightbox-caption="Dual-MCU embedded pipeline: STM32F4 FreeRTOS micro-ROS subscriber offloading 8-byte velocity structs via DMA to an NXP FRDM Zephyr RTOS stepper actuation node.">
+              <span class="media-pill">DUAL-MCU FIRMWARE</span>
+              <img src="assets/images/aerotrack-hardware-thesis.jpg" alt="C-UAS Dual-MCU Turret Rig">
+            </div>
+            <div class="sys-body">
+              <div class="sys-top">
+                <h3>C-UAS micro-ROS Gateway &amp; Zephyr Actuation Stack</h3>
+                <span class="sys-id">DUAL REPO</span>
+              </div>
+              <p>
+                Deterministic 2-board real-time actuation stack: an <strong>STM32F4 FreeRTOS</strong> node subscribes to <code>/anti_uav/joint_command</code> via micro-ROS and streams 8-byte <code>joints_t</code> velocity payloads over UART DMA to an <strong>NXP FRDM Zephyr RTOS</strong> node driving geared (4:1 pan / 3:1 tilt) steppers via 50%-duty PWM + LPUART ISR.
+              </p>
+              <div class="tag-list">
+                <span class="tag">STM32F4</span>
+                <span class="tag">FreeRTOS</span>
+                <span class="tag">micro-ROS</span>
+                <span class="tag">UART DMA</span>
+                <span class="tag">Zephyr PWM</span>
+              </div>
+              <div class="sys-actions">
+                <a class="link-arrow" href="https://github.com/bnina-ayoub/CUAS-Actuation-STM32" target="_blank" rel="noreferrer">STM32 Repo ↗</a>
+                <a class="link-arrow" href="https://github.com/bnina-ayoub/CUAS-Gateway-Zephyr" target="_blank" rel="noreferrer">Zephyr Repo ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03: ROS 2 + THREADX PAN-TILT TRACKER (SPAN-2) -->
+          <article class="hud-box sys-card span-2" data-cat="rtos cuas">
+            <div class="sys-media" data-lightbox-video="assets/videos/pantilt-demo.mp4" data-lightbox-title="ROS 2 Humble + ThreadX RTOS Pan-Tilt Aircraft Tracker" data-lightbox-caption="YOLO visual target lock on fighter aircraft, ThreadX multi-threaded X/Y control tasks on STM32, live SWV Data Trace error curves, and physical outdoor pan-tilt servo tracking.">
+              <span class="media-pill video">● LIVE SWV + VIDEO DEMO</span>
+              <img src="assets/images/posters/pantilt-demo.jpg" alt="ROS 2 ThreadX Pan-Tilt Visual Tracker">
+              <div class="play-overlay">
+                <span class="play-btn">▶ WATCH DEMO</span>
+              </div>
+            </div>
+            <div class="sys-body">
+              <div class="sys-top">
+                <h3>ROS 2 + ThreadX RTOS Pan-Tilt Visual Tracker</h3>
+                <span class="sys-id">SYS-03</span>
+              </div>
+              <p>
+                Real-time pan-tilt aircraft tracking turret built with <strong>ROS 2 Humble</strong>, <strong>Azure RTOS ThreadX</strong> dedicated X/Y coordinate threads, <strong>micro-ROS</strong> geometry messaging, STM32 hardware Timer PWM servo control, and live PID error tuning validated via STM32CubeIDE SWV Data Trace.
+              </p>
+              <div class="tag-list">
+                <span class="tag">ROS 2 Humble</span>
+                <span class="tag">ThreadX RTOS</span>
+                <span class="tag">STM32 Timers</span>
+                <span class="tag">PID Control</span>
+                <span class="tag">SWV Trace</span>
+              </div>
+              <div class="sys-actions">
+                <button class="link-arrow play-link" type="button" data-lightbox-video="assets/videos/pantilt-demo.mp4" data-lightbox-title="ROS 2 + ThreadX RTOS Pan-Tilt Tracker" data-lightbox-caption="Live SWV error timeline + outdoor turret tracking demo.">▶ Play Demo Video</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04: 3-NODE STM32 CAN BUS NETWORK -->
+          <article class="hud-box sys-card" data-cat="protocols rtos">
+            <div class="sys-media" data-lightbox-video="assets/videos/canbus-demo.mp4" data-lightbox-title="3-Node STM32F407 CAN Bus Distributed Control Network" data-lightbox-caption="Three Open407V-D STM32F407 boards networked over twisted-pair CAN transceivers with StdId hardware filtering, potentiometer ADC sampling, EXTI button triggers, and STM32CubeIDE Live Expressions.">
+              <span class="media-pill video">● HARDWARE CAN DEMO</span>
+              <img src="assets/images/posters/canbus-demo.jpg" alt="3-Node STM32 CAN Bus Hardware Demo">
+              <div class="play-overlay">
+                <span class="play-btn">▶ WATCH CAN DEMO</span>
+              </div>
+            </div>
+            <div class="sys-body">
+              <div class="sys-top">
+                <h3>3-Node STM32F407 CAN Bus Gateway Network</h3>
+                <span class="sys-id">RAS ODYSSEY</span>
+              </div>
+              <p>
+                Multi-node automotive/avionics-style CAN Bus topology connecting 3× <strong>STM32F407G-DISC1</strong> boards via CAN transceivers. Implements node-ID hardware acceptance filtering on the gateway, ADC potentiometer reads, and interrupt-driven EXTI frame transmission.
+              </p>
+              <div class="tag-list">
+                <span class="tag">CAN Bus</span>
+                <span class="tag">STM32F407</span>
+                <span class="tag">ADC / EXTI</span>
+                <span class="tag">StdId Filtering</span>
+                <span class="tag">Embedded C</span>
+              </div>
+              <div class="sys-actions">
+                <button class="link-arrow play-link" type="button" data-lightbox-video="assets/videos/canbus-demo.mp4" data-lightbox-title="3-Node STM32 CAN Bus Demo" data-lightbox-caption="Live CAN bus arbitration & gateway frame inspection.">▶ Play Hardware Demo</button>
+                <a class="link-arrow" href="https://github.com/bnina-ayoub/canbus_project" target="_blank" rel="noreferrer">Repo ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 05: ECPP AUTO UART BAUDRATE DETECTOR -->
+          <article class="hud-box sys-card" data-cat="protocols">
+            <div class="sys-media" style="cursor:default">
+              <span class="media-pill">TIMER INPUT CAPTURE</span>
+              <div class="sys-media-placeholder">
+<pre class="code-preview"><span class="cm">// STM32F401RE Auto-UART Baudrate Inference</span>
+<span class="kw">void</span> HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim) {
+  edge_dt = __HAL_TIM_GET_CAPTURE(htim, TIM_CHANNEL_1);
+  bit_us  = min_pulse_width(edge_dt);
+  <span class="ok">inferred_baud = (uint32_t)(TIM_CLK_HZ / bit_us);</span>
+  UART_Reconfigure_BRR(USART2, inferred_baud);
+}</pre>
+              </div>
+            </div>
+            <div class="sys-body">
+              <div class="sys-top">
+                <h3>STM32 Auto-UART Baudrate Detector</h3>
+                <span class="sys-id">ECPP PREP</span>
+              </div>
+              <p>
+                Hardware-timed automatic baud rate inference firmware on <strong>STM32F401RE</strong>. Uses dual-edge Timer Input Capture interrupts on the RX line to measure incoming bit-period pulse widths and dynamically reconfigure UART baud registers without prior host handshake.
+              </p>
+              <div class="tag-list">
+                <span class="tag">STM32F4</span>
+                <span class="tag">Timer Input Capture</span>
+                <span class="tag">UART / ISR</span>
+                <span class="tag">State Machine</span>
+                <span class="tag">C</span>
+              </div>
+              <div class="sys-actions">
+                <a class="link-arrow" href="https://github.com/bnina-ayoub/ECPP-Auto-UART-Baudrate-Detector" target="_blank" rel="noreferrer">View Repo ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 06: BARE-METAL STM32 GPIO DRIVER & ECPC -->
+          <article class="hud-box sys-card" data-cat="protocols">
+            <div class="sys-media" style="cursor:default">
+              <span class="media-pill">BARE-METAL REGISTERS</span>
+              <div class="sys-media-placeholder">
+<pre class="code-preview"><span class="cm">// Zero-HAL Register &amp; Bitmask Peripheral Driver</span>
+<span class="kw">void</span> GPIO_Init(GPIO_RegDef_t *pGPIOx, GPIO_PinCfg_t *cfg) {
+  RCC-&gt;AHB1ENR |= (<span class="ok">1U &lt;&lt; port_idx</span>);
+  pGPIOx-&gt;MODER &amp;= ~(0x3U &lt;&lt; (2U * cfg-&gt;pin));
+  pGPIOx-&gt;MODER |=  ((cfg-&gt;mode &amp; 0x3U) &lt;&lt; (2U * cfg-&gt;pin));
+  pGPIOx-&gt;OSPEEDR |= (cfg-&gt;speed &lt;&lt; (2U * cfg-&gt;pin));
+}</pre>
+              </div>
+            </div>
+            <div class="sys-body">
+              <div class="sys-top">
+                <h3>Bare-Metal STM32F4 Driver &amp; ECPC Solutions</h3>
+                <span class="sys-id">REGISTER-LEVEL</span>
+              </div>
+              <p>
+                Custom register-level STM32F4 GPIO driver engineered directly from the ST Reference Manual (RCC clocking, bit-masking, MODER/OSPEEDR/PUPDR) paired with 1st-place NRW ECPC non-blocking UART/SPI/I2C firmware challenges on STM32F407VG.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Bare-Metal C</span>
+                <span class="tag">Bitwise / Masks</span>
+                <span class="tag">STM32F407</span>
+                <span class="tag">UART / SPI / I2C</span>
+              </div>
+              <div class="sys-actions">
+                <a class="link-arrow" href="https://github.com/bnina-ayoub/stm32f4_gpio_driver" target="_blank" rel="noreferrer">GPIO Driver ↗</a>
+                <a class="link-arrow" href="https://github.com/bnina-ayoub/embedded-problem-solving-challenges" target="_blank" rel="noreferrer">ECPC Solutions ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 07: QUADRUPED RL LOCOMOTION -->
+          <article class="hud-box sys-card" data-cat="cuas edge">
+            <div class="sys-media" style="cursor:default">
+              <span class="media-pill">SIM-TO-REAL RL</span>
+              <div class="sys-media-placeholder">
+<pre class="code-preview"><span class="cm">// Unitree Go1 MuJoCo / Gymnasium Environment</span>
+obs, reward, done = env.step(policy_action)
+<span class="kw">control_mode</span> = [<span class="ok">"TORQUE_PD"</span>, <span class="ok">"JOINT_POS"</span>]
+<span class="cm">// Directly complements OORB STM32 + RPi</span>
+<span class="cm">// quadruped micro-ROS locomotion firmware</span></pre>
+              </div>
+            </div>
+            <div class="sys-body">
+              <div class="sys-top">
+                <h3>Quadruped RL Locomotion (Unitree Go1)</h3>
+                <span class="sys-id">MUJOCO / RL</span>
+              </div>
+              <p>
+                Reinforcement learning locomotion experiments in <strong>MuJoCo</strong> using a custom Gymnasium environment for the Unitree Go1 quadruped — comparing torque and joint-position control policies for dynamic gait stability.
+              </p>
+              <div class="tag-list">
+                <span class="tag">MuJoCo</span>
+                <span class="tag">Gymnasium</span>
+                <span class="tag">Reinforcement Learning</span>
+                <span class="tag">Unitree Go1</span>
+                <span class="tag">Python</span>
+              </div>
+              <div class="sys-actions">
+                <a class="link-arrow" href="https://github.com/bnina-ayoub/quadruped-rl-locomotion" target="_blank" rel="noreferrer">View Repo ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 08: JARVIS SMART HOME ESP32 (SPAN-2) -->
+          <article class="hud-box sys-card span-2" data-cat="edge protocols">
+            <div class="sys-media" data-lightbox-video="assets/videos/jarvis-demo.mp4" data-lightbox-title="JARVIS — ESP32 Voice-Actuated Smart IoT System" data-lightbox-caption="Natural-language voice actuation combining OpenAI GPT, Microsoft Azure Speech, Firestore telemetry, and ESP32 relay/motion hardware driving physical lights and shutters.">
+              <span class="media-pill video">● LIVE DEMO · 7★ GITHUB</span>
+              <img src="assets/images/posters/jarvis-demo.jpg" alt="JARVIS ESP32 Smart Home Demo">
+              <div class="play-overlay">
+                <span class="play-btn">▶ WATCH DEMO</span>
+              </div>
+            </div>
+            <div class="sys-body">
+              <div class="sys-top">
+                <h3>JARVIS — ESP32 Voice-Controlled IoT System</h3>
+                <span class="sys-id">7★ GITHUB</span>
+              </div>
+              <p>
+                End-to-end voice-controlled home automation combining <strong>ESP32</strong> C++ firmware, hardware relay boards, PIR motion sensors, Microsoft Azure Speech STT/TTS, OpenAI LLM intent parsing, and Firestore cloud state sync.
+              </p>
+              <div class="tag-list">
+                <span class="tag">ESP32</span>
+                <span class="tag">C++ / PlatformIO</span>
+                <span class="tag">Azure Speech</span>
+                <span class="tag">LLM</span>
+                <span class="tag">Firestore</span>
+              </div>
+              <div class="sys-actions">
+                <button class="link-arrow play-link" type="button" data-lightbox-video="assets/videos/jarvis-demo.mp4" data-lightbox-title="JARVIS ESP32 Demo" data-lightbox-caption="Voice-controlled shutter & smart relay actuation demo.">▶ Play Video</button>
+                <a class="link-arrow" href="https://github.com/bnina-ayoub/JARVIS-Home-Assistant" target="_blank" rel="noreferrer">Repo ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 09: INTELLIGENT SURVEILLANCE & ACCESS CONTROL -->
+          <article class="hud-box sys-card" data-cat="edge">
+            <div class="sys-media" style="cursor:default">
+              <span class="media-pill">EDGE VISION · 3★ GITHUB</span>
+              <div class="sys-media-placeholder">
+<pre class="code-preview"><span class="cm">// Raspberry Pi 4 Dual-Factor Biometric Gate</span>
+frame = pi_cam.capture()
+face_ok = azure_vision.verify_face(frame)
+card_ok = ocr_verify_student_id(frame)
+<span class="kw">if</span> (face_ok &amp;&amp; card_ok) <span class="ok">GPIO.actuate_lock(OPEN);</span></pre>
+              </div>
+            </div>
+            <div class="sys-body">
+              <div class="sys-top">
+                <h3>Intelligent Surveillance &amp; Access Control</h3>
+                <span class="sys-id">3★ GITHUB</span>
+              </div>
+              <p>
+                Embedded dual-factor security and access-control prototype deployed on <strong>Raspberry Pi 4</strong> combining live facial recognition and student-card verification via Azure Cognitive Services.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Raspberry Pi 4</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Azure Vision</span>
+                <span class="tag">Python</span>
+              </div>
+              <div class="sys-actions">
+                <a class="link-arrow" href="https://github.com/bnina-ayoub/Intelligent-surveillance-access-control-System-" target="_blank" rel="noreferrer">View Repo ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 04 / CAREER: EXPERIENCE, EDUCATION & LEADERSHIP ================= -->
+    <section id="career">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="sec-eyebrow">04 // Career Trajectory</div>
+            <h2>Industry Engineering, Research &amp; Leadership</h2>
+          </div>
+          <p class="sec-note">
+            Cleanly separated between hands-on industrial robotics internships, academic degrees, and voluntary technical leadership &amp; instruction.
+          </p>
+        </div>
+
+        <div class="career-grid">
+          <!-- TRACK A: INDUSTRIAL ENGINEERING EXPERIENCE -->
+          <div class="hud-box track-panel">
+            <div class="track-header">
+              <h3>Engineering Experience</h3>
+              <span class="track-badge badge lime">3 Industry Internships</span>
+            </div>
+            <div class="timeline">
+              <div class="tl-item lime">
+                <div class="tl-head">
+                  <span class="tl-role">Embedded Robotics Engineer Intern</span>
+                  <span class="tl-date">FEB 2025 – JUL 2025</span>
+                </div>
+                <div class="tl-org">OORB (Open Organic Robotics) · Sousse, Tunisia</div>
+                <ul class="tl-bullets">
+                  <li>Engineered embedded control firmware for a dynamic <strong>quadruped robot</strong> spanning <strong>STM32</strong> and <strong>Raspberry Pi</strong>.</li>
+                  <li>Diagnosed and resolved <strong>DDS and SPI integration bottlenecks</strong> to establish deterministic, low-jitter <strong>micro-ROS</strong> communication for dynamic locomotion.</li>
+                  <li>Delivered milestone firmware through daily stand-ups and weekly Agile/Scrum engineering sprints.</li>
+                </ul>
+              </div>
+
+              <div class="tl-item">
+                <div class="tl-head">
+                  <span class="tl-role">Robotic Software Developer Intern</span>
+                  <span class="tl-date">JUL 2024 – SEP 2024</span>
+                </div>
+                <div class="tl-org">SEABOT SARL (MareCustos) · Lac 1, Tunis, Tunisia</div>
+                <ul class="tl-bullets">
+                  <li>Implemented <strong>Azure RTOS ThreadX</strong> on an <strong>STM32U5</strong> microcontroller for underwater autonomous robot control.</li>
+                  <li>Deployed <strong>ROS 2</strong> on an <strong>NVIDIA Jetson</strong> and architected real-time <strong>micro-ROS</strong> IPC between the Jetson and STM32U5 for sensor processing and autonomous navigation.</li>
+                  <li>Managed sprint deliverables, code reviews, and issue tracking via Atlassian Jira and Git.</li>
+                </ul>
+              </div>
+
+              <div class="tl-item">
+                <div class="tl-head">
+                  <span class="tl-role">Embedded Software Developer Intern</span>
+                  <span class="tl-date">FEB 2024 – JUN 2024</span>
+                </div>
+                <div class="tl-org">Food4Future (SPIRAW) — ActInCube · ACTIA Engineering Services · Ariana, Tunisia</div>
+                <ul class="tl-bullets">
+                  <li>Developed real-time <strong>FreeRTOS</strong> embedded firmware in C/C++ on the <strong>STM32H7B3I-DK</strong> platform for an automated Spirulina cultivation system.</li>
+                  <li>Designed and implemented the onboard touchscreen HMI using <strong>TouchGFX</strong>.</li>
+                  <li>Integrated <strong>ESP8266 Wi-Fi</strong> telemetry via AT-command drivers for remote sensor monitoring and control.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="edu-photo-strip" style="grid-template-columns:1fr 1fr;margin-top:20px">
+              <div class="mini-photo" style="height:112px" data-lightbox-img="assets/images/marecustos-microros.jpg" data-lightbox-title="SEABOT SARL (MareCustos) — micro-ROS on STM32" data-lightbox-caption="Engineering workspace during the SEABOT SARL / MareCustos underwater robotics internship integrating micro-ROS for STM32CubeMX with ROS 2 on NVIDIA Jetson.">
+                <img src="assets/images/marecustos-microros.jpg" alt="MareCustos micro-ROS STM32 Lab">
+                <span>SEABOT / MareCustos micro-ROS Lab ⤢</span>
+              </div>
+              <div class="mini-photo" style="height:112px" data-lightbox-img="assets/images/energy-plc-lab.jpg" data-lightbox-title="Industrial PLC &amp; Power Systems Bench (CSFIEE / Schneider Electric)" data-lightbox-caption="Hands-on industrial electrical automation, VFD motor diagnostics, and Schneider Electric PLC lab validation during P3EI certification.">
+                <img src="assets/images/energy-plc-lab.jpg" alt="Industrial PLC & Electrical Lab">
+                <span>Industrial PLC &amp; VFD Lab Bench ⤢</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TRACK B: EDUCATION & RESEARCH -->
+          <div class="hud-box track-panel">
+            <div class="track-header">
+              <h3>Education &amp; Research</h3>
+              <span class="track-badge badge cyan">Double MSc Track</span>
+            </div>
+            <div class="timeline">
+              <div class="tl-item amber">
+                <div class="tl-head">
+                  <span class="tl-role">MSc in Computer Engineering</span>
+                  <span class="tl-date">OCT 2025 – PRESENT</span>
+                </div>
+                <div class="tl-org">Ondokuz Mayıs University · Samsun, Türkiye</div>
+                <ul class="tl-bullets">
+                  <li>Fully funded <strong>Türkiye Scholarships (YTB)</strong> Government Scholar selected for academic excellence.</li>
+                  <li>Active embedded/autonomy research &amp; <strong>TEKNOFEST Team OMU Sungur</strong> member.</li>
+                </ul>
+              </div>
+
+              <div class="tl-item cyan">
+                <div class="tl-head">
+                  <span class="tl-role">MSc Research in Smart Systems (M2 — AIS)</span>
+                  <span class="tl-date">DEFENDED SEP 2026</span>
+                </div>
+                <div class="tl-org">ENSI — Ecole Nationale des Sciences de l'Informatique · Tunisia</div>
+                <ul class="tl-bullets">
+                  <li>Thesis: <em>AeroTrack: Active Perception and Closed-Loop Control for UAV Swarm Tracking</em> (Supervised by Prof. Chadlia Jerad).</li>
+                  <li>Resulting paper submitted to <strong>IEEE Sensors Journal</strong> (currently under peer review).</li>
+                </ul>
+              </div>
+
+              <div class="tl-item">
+                <div class="tl-head">
+                  <span class="tl-role">M1 Research Master — Data Science &amp; IR</span>
+                  <span class="tl-date">SEP 2024 – JUN 2025</span>
+                </div>
+                <div class="tl-org">ISAMM — University of Manouba · Tunisia</div>
+              </div>
+
+              <div class="tl-item">
+                <div class="tl-head">
+                  <span class="tl-role">BSc in Computer Engineering (IoT &amp; Embedded)</span>
+                  <span class="tl-date">SEP 2021 – JUL 2024</span>
+                </div>
+                <div class="tl-org">FST — University of Tunis El Manar · Tunisia</div>
+              </div>
+            </div>
+
+            <div class="edu-photo-strip">
+              <div class="mini-photo" data-lightbox-img="assets/images/omu-arrival.jpg" data-lightbox-title="Ondokuz Mayıs University — Samsun, Türkiye" data-lightbox-caption="Starting my YTB-funded MSc in Computer Engineering at Ondokuz Mayıs Üniversitesi, Samsun, Türkiye.">
+                <img src="assets/images/omu-arrival.jpg" alt="Ondokuz Mayis University Arrival">
+                <span>OMU Türkiye ⤢</span>
+              </div>
+              <div class="mini-photo" data-lightbox-img="assets/images/ensi-defense-team.jpg" data-lightbox-title="ENSI Research Master's Defense — Sep 2026" data-lightbox-caption="Successful MSc Research defense of AeroTrack at ENSI alongside supervisor Prof. Chadlia Jerad and thesis jury.">
+                <img src="assets/images/ensi-defense-team.jpg" alt="ENSI Master Defense">
+                <span>ENSI Defense ⤢</span>
+              </div>
+              <div class="mini-photo" data-lightbox-img="assets/images/fst-graduation.jpg" data-lightbox-title="BSc Graduation — FST University of Tunis El Manar" data-lightbox-caption="Graduating in Computer Engineering (IoT & Embedded Systems) with FST mentors.">
+                <img src="assets/images/fst-graduation.jpg" alt="FST Bachelor Graduation">
+                <span>FST BSc ⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TRACK C: LEADERSHIP, INSTRUCTION & VOLUNTARY WORK -->
+        <div class="hud-box track-panel">
+          <div class="track-header">
+            <h3>Technical Instruction, Leadership &amp; Community</h3>
+            <span class="track-badge badge amber">Voluntary &amp; Certified Teaching</span>
+          </div>
+          <div class="leadership-grid">
+            <div class="lead-card">
+              <strong>NVIDIA DLI Certified Instructor</strong>
+              <div class="lead-org">NVIDIA Deep Learning Institute · Jan 2025 – Present</div>
+              <p>Officially certified by NVIDIA to deliver instructor-led workshops on <em>Bootstrapping Computer Vision Models with Synthetic Data</em>.</p>
+            </div>
+            <div class="lead-card">
+              <strong>Technical AI/ML Lead</strong>
+              <div class="lead-org">GDG On Campus — ISAMM · Nov 2024 – Apr 2025</div>
+              <p>Directed technical curriculum, launched the <em>ML Math Club</em> optimization series, and mentored student AI builders.</p>
+            </div>
+            <div class="lead-card">
+              <strong>STM32 &amp; Robotics Trainer</strong>
+              <div class="lead-org">Club Robotique ISAMM · Voluntary</div>
+              <p>Delivered hands-on microcontroller bring-up, register/HAL programming, and embedded robotics workshops.</p>
+            </div>
+            <div class="lead-card">
+              <strong>Guest Deep Learning Instructor</strong>
+              <div class="lead-org">ORBYX ENSI Club · Dec 2025</div>
+              <p>Taught <em>Hands-On Artificial Neural Networks with PyTorch</em> with live code demos for engineering students at ENSI.</p>
+            </div>
+            <div class="lead-card">
+              <strong>Head of Machine Learning / Core Member</strong>
+              <div class="lead-org">GDSC ENIT (2023–2024) &amp; GDSC FST (2022–2023)</div>
+              <p>Led multi-campus ML workshops (ENIT × FST), co-organized the <em>ML Night</em> hackathon, and trained cohorts in data engineering.</p>
+            </div>
+            <div class="lead-card">
+              <strong>Honorary Student Ambassador</strong>
+              <div class="lead-org">DataCamp Donates / Classrooms · 2024–2025</div>
+              <p>Expanded free university access to data science &amp; AI education across Tunisian campuses via DataCamp Classrooms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 05 / COMPETITIONS, HONORS & FIELD EVIDENCE ================= -->
+    <section id="arena">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="sec-eyebrow">05 // Combat-Proven Arena</div>
+            <h2>Embedded Contests, Hackathons &amp; Scholarships</h2>
+          </div>
+          <p class="sec-note">
+            Proven under live hardware-debugging pressure across national IEEE embedded contests, Horizon Europe industry hackathons, and competitive international fellowships.
+          </p>
+        </div>
+
+        <div class="arena-grid">
+          <!-- 1ST PLACE NRW 6.0 ECPC -->
+          <article class="hud-box accent-amber award-card">
+            <div class="award-photo" data-lightbox-img="assets/images/nrw6-ecpc-1st-team.jpg" data-lightbox-title="1st Place — National Robotics Weekend (NRW 6.0) ECPC" data-lightbox-caption="Team The Callback winning 1st Place (1500 DT) at the inaugural Embedded Competitive Programming Contest organized by IEEE RAS INSAT with STMicroelectronics, ACTIA, and MareCustos (Jun 2024).">
+              <span class="rank-ribbon rank-gold">🥇 1st Place · Champion</span>
+              <img src="assets/images/nrw6-ecpc-1st-team.jpg" alt="1st Place NRW 6.0 ECPC Team The Callback">
+            </div>
+            <div class="award-body">
+              <div class="award-meta">JUN 2024 · IEEE RAS INSAT × STMICROELECTRONICS × ACTIA</div>
+              <h3>NRW 6.0 — Embedded Competitive Programming Contest</h3>
+              <p>Led Team <em>The Callback</em> to <strong>1st Place</strong> (1,500 DT) solving timed STM32F407 bare-metal and communication protocol challenges (UART, SPI, I2C, timers) under live hardware evaluation.</p>
+            </div>
+          </article>
+
+          <!-- 2ND PLACE NRW 7.0 ECPC -->
+          <article class="hud-box award-card">
+            <div class="award-photo" data-lightbox-img="assets/images/nrw7-ecpc-2nd-stage.jpg" data-lightbox-title="2nd Place (Runner-Up) — National Robotics Weekend 7.0 ECPC 2.0" data-lightbox-caption="Team The Callback securing Runner-Up (1,000 DT) — finishing just 1 point behind 1st place at NRW 7.0 ECPC 2.0 organized by IEEE INSAT RAS & CSF (2025).">
+              <span class="rank-ribbon rank-silver">🥈 2nd Place · Runner-Up</span>
+              <img src="assets/images/nrw7-ecpc-2nd-stage.jpg" alt="2nd Place NRW 7.0 ECPC">
+            </div>
+            <div class="award-body">
+              <div class="award-meta">2025 · IEEE RAS INSAT × CSF · 1 PT BEHIND 1ST</div>
+              <h3>NRW 7.0 — ECPC 2.0 Embedded Contest</h3>
+              <p>Back-to-back national podium for Team <em>The Callback</em> (1,000 DT), finishing just a single point shy of defending the crown across advanced STM32 real-time firmware tasks.</p>
+            </div>
+          </article>
+
+          <!-- TRIPLE CHAMPION TWISE NIGHT -->
+          <article class="hud-box accent-lime award-card">
+            <div class="award-photo" data-lightbox-img="assets/images/twise-champions.jpg" data-lightbox-title="Triple Champion (3/5 Hat-Trick) — TWISE Night Challenge" data-lightbox-caption="Team MasterMinds holding the TWISE Night Challenge Special Edition trophy (Horizon Europe EU Grant #101162386) — the ONLY team to win 3 of 5 industry challenges.">
+              <span class="rank-ribbon rank-lime">🏆 Hat-Trick · Won 3/5</span>
+              <img src="assets/images/twise-champions.jpg" alt="TWISE Night Challenge Triple Champions">
+            </div>
+            <div class="award-body">
+              <div class="award-meta">FEB 2025 · HORIZON EUROPE EU GRANT · TEAM MASTERMINDS</div>
+              <h3>TWISE Night Challenge — Industry Hat-Trick</h3>
+              <p>Only team to conquer <strong>3 out of 5 industry challenges</strong>: low-connectivity edge AI fetal health monitoring (INSAT LISI), predictive risk analytics, and computer vision mobile inspection (ARSII).</p>
+            </div>
+          </article>
+
+          <!-- 3RD PLACE ECPP -->
+          <article class="hud-box award-card">
+            <div class="award-photo" data-lightbox-img="assets/images/ecpp-3rd.jpg" data-lightbox-title="3rd Place — Embedded Competitive Programming Preparation (ECPP)" data-lightbox-caption="Team The Callback placing 3rd at ECPP organized by IEEE INSAT RAS Chapter and Centre Supérieur de Formation (CSF).">
+              <span class="rank-ribbon rank-bronze">🥉 3rd Place · Podium</span>
+              <img src="assets/images/ecpp-3rd.jpg" alt="3rd Place ECPP">
+            </div>
+            <div class="award-body">
+              <div class="award-meta">2025 · IEEE INSAT RAS × CSF</div>
+              <h3>ECPP — Embedded Programming Contest</h3>
+              <p>Secured <strong>3rd Place</strong> on STM32 microcontroller timing, serial protocol inference, and interrupt-driven embedded algorithms.</p>
+            </div>
+          </article>
+
+          <!-- YTB GOVERNMENT SCHOLARSHIP & ANTALYA CAMP -->
+          <article class="hud-box award-card">
+            <div class="award-photo" data-lightbox-img="assets/images/ytb-president.jpg" data-lightbox-title="Türkiye Bursları (YTB) Scholar &amp; 10th Antalya Youth Camp" data-lightbox-caption="Representing Tunisia among 180 scholars from 59 countries at the 10th Anniversary YTB Youth Camp in Antalya, photographed with YTB President A. Hadi Turus.">
+              <span class="rank-ribbon rank-cyan">🇹🇷 Government Scholar</span>
+              <img src="assets/images/ytb-president.jpg" alt="YTB Scholarship Antalya Youth Camp">
+            </div>
+            <div class="award-body">
+              <div class="award-meta">2025 – PRESENT · PRESIDENCY FOR TURKS ABROAD (YTB)</div>
+              <h3>Türkiye Bursları Scholar &amp; Youth Camp Delegate</h3>
+              <p>Awarded full Turkish government MSc scholarship (honored by Ambassador Ahmet Misbah Demircan at Yunus Emre Enstitüsü); selected among 180 delegates from 59 countries at the 10th YTB Antalya Camp.</p>
+            </div>
+          </article>
+
+          <!-- DEEP FOCUS HACKATHON / FIELD WORK -->
+          <article class="hud-box award-card">
+            <div class="award-photo" data-lightbox-img="assets/images/twise-focus.jpg" data-lightbox-title="Engineering Execution Under Pressure — TWISE Night" data-lightbox-caption="Overnight systems prototyping during the Horizon Europe TWISE Night Challenge alongside SWAFYTHON 4th Place (EU4Youth Tunisia / ANPR).">
+              <span class="rank-ribbon rank-cyan">🏅 4th · SWAFYTHON</span>
+              <img src="assets/images/twise-focus.jpg" alt="Ayoub Bnina Prototyping at Hackathon">
+            </div>
+            <div class="award-body">
+              <div class="award-meta">EU4YOUTH TUNISIA × ANPR · HORIZON EUROPE</div>
+              <h3>SWAFYTHON Hackathon &amp; Rapid Prototyping</h3>
+              <p>Placed <strong>4th</strong> at the EU-funded SWAFYTHON Hackathon (ANPR) building innovative education-tech software under strict 24-hour delivery constraints.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- EXTRA EVIDENCE GALLERY STRIP -->
+        <div class="honor-strip">
+          <div class="honor-pill">
+            <img class="honor-thumb" src="assets/images/tunsa-space.jpg" alt="TUNSA Space Summer School" data-lightbox-img="assets/images/tunsa-space.jpg" data-lightbox-title="TUNSA Space Summer School 2025" data-lightbox-caption="Trained in CubeSat Structure Engineering, Space Communication Systems, Satellite ADCS (Attitude Determination & Control), and Space Power Systems.">
+            <div>
+              <strong>TUNSA Space Summer School (2025)</strong>
+              <span>CubeSat ADCS, Space Comms &amp; Power Systems</span>
+            </div>
+          </div>
+          <div class="honor-pill">
+            <img class="honor-thumb" src="assets/images/energy-cert-day.jpg" alt="P3EI Energy Efficiency Certification" data-lightbox-img="assets/images/energy-cert-day.jpg" data-lightbox-title="Industrial Electrical &amp; Schneider Electric PLC Certification" data-lightbox-caption="Passed written & oral exams for P3EI Energy Efficiency for Industrial Electrical Installations (CSFIEE, FEDELEC, Swisscontact, Schneider Electric PLC & VFDs).">
+            <div>
+              <strong>Industrial PLC &amp; Power Systems</strong>
+              <span>Schneider Electric PLC · VFDs · P3EI Exam Certified</span>
+            </div>
+          </div>
+          <div class="honor-pill">
+            <img class="honor-thumb" src="assets/images/marathon-21k.jpg" alt="COMAR 21.1km Half-Marathon" data-lightbox-img="assets/images/marathon-21k.jpg" data-lightbox-title="37th COMAR 21.1 km Half-Marathon Finisher" data-lightbox-caption="Completed the 21.1 km COMAR Semi-Marathon (37th Edition) — bringing endurance, grit, and mental discipline from long-distance running to mission-critical engineering.">
+            <div>
+              <strong>37th COMAR 21.1 km Half-Marathon</strong>
+              <span>Endurance &amp; discipline beyond the engineering bench</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 06 / HARDWARE-TO-AI STACK & VERIFIED CERTIFICATIONS ================= -->
+    <section id="credentials">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="sec-eyebrow">06 // Technical Capabilities &amp; Verified Credentials</div>
+            <h2>Full-Stack Hardware-to-AI Matrix</h2>
+          </div>
+          <p class="sec-note">
+            Every skill below is proven in shipping code, upstream drivers, or industry internships — paired with verified credentials from Arm, NVIDIA, Microsoft, and Udacity.
+          </p>
+        </div>
+
+        <div class="skills-matrix">
+          <div class="hud-box skill-group">
+            <h3>Silicon &amp; Bare-Metal <span>LAYER 01</span></h3>
+            <div class="chip-cloud">
+              <span class="skill-chip core">STM32 (F4 · H7 · U5)</span>
+              <span class="skill-chip core">NXP MCX (FRDM-MCXA)</span>
+              <span class="skill-chip core">ARM Cortex-M</span>
+              <span class="skill-chip">Embedded C / C++</span>
+              <span class="skill-chip">DMA / Timers / PWM</span>
+              <span class="skill-chip">eQDC / Encoders</span>
+              <span class="skill-chip">ESP32 / ESP8266</span>
+              <span class="skill-chip">Register Drivers</span>
+            </div>
+          </div>
+
+          <div class="hud-box skill-group">
+            <h3>RTOS, Middleware &amp; Buses <span>LAYER 02</span></h3>
+            <div class="chip-cloud">
+              <span class="skill-chip core">Zephyr RTOS</span>
+              <span class="skill-chip core">FreeRTOS</span>
+              <span class="skill-chip core">Azure RTOS ThreadX</span>
+              <span class="skill-chip core">ROS 2 / micro-ROS</span>
+              <span class="skill-chip">CAN Bus</span>
+              <span class="skill-chip">UART · SPI · I2C</span>
+              <span class="skill-chip">Modbus · PLC</span>
+              <span class="skill-chip">TouchGFX · DDS</span>
+            </div>
+          </div>
+
+          <div class="hud-box skill-group">
+            <h3>Edge AI, Sim2Real &amp; Control <span>LAYER 03</span></h3>
+            <div class="chip-cloud">
+              <span class="skill-chip core">NVIDIA Isaac Sim</span>
+              <span class="skill-chip core">TensorRT (FP16)</span>
+              <span class="skill-chip core">NVIDIA Jetson</span>
+              <span class="skill-chip">PyTorch / YOLOX</span>
+              <span class="skill-chip">ByteTrack / NWD</span>
+              <span class="skill-chip">PID Visual Servoing</span>
+              <span class="skill-chip">MuJoCo / RL</span>
+              <span class="skill-chip">Linux · Git · Jira · CI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec-eyebrow" style="margin-bottom:14px">Verified Industry Certifications &amp; Specialized Training</div>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">Arm Education · edX Professional Certificate</div>
+              <div class="cert-title">Embedded Systems Essentials with Arm</div>
+              <div class="cert-meta">Apr 2025 · ID: e48baa42f28c4468a41866d579e5c543</div>
+            </div>
+            <span class="badge lime">VERIFIED</span>
+          </div>
+
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">NVIDIA Deep Learning Institute</div>
+              <div class="cert-title">Certified Instructor: Bootstrapping CV Models with Synthetic Data</div>
+              <div class="cert-meta">Jan 2025 · ID: IMCDpHziQxuX-TfAMHqypw</div>
+            </div>
+            <a class="btn btn-sm" href="https://learn.nvidia.com/certificates?id=IMCDpHziQxuX-TfAMHqypw" target="_blank" rel="noreferrer">Verify ↗</a>
+          </div>
+
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">NVIDIA DLI × United Nations Satellite Centre (UNOSAT)</div>
+              <div class="cert-title">Disaster Risk Monitoring Using Satellite Imagery</div>
+              <div class="cert-meta">Certificate of Competency · Geospatial Computer Vision</div>
+            </div>
+            <span class="badge cyan">AEROSPACE</span>
+          </div>
+
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">IEEE RAS INSAT × Centre Supérieur de Formation (CSF)</div>
+              <div class="cert-title">STM32 CAN Bus Intensive Engineering Workshop (28 Hours)</div>
+              <div class="cert-meta">Apr – May 2024 · RAS Odyssey 2.0 · Hardware Bring-Up</div>
+            </div>
+            <span class="badge cyan">EMBEDDED</span>
+          </div>
+
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">P3EI · CSFIEE · FEDELEC · Swisscontact · Schneider Electric</div>
+              <div class="cert-title">Energy Efficiency for Industrial Electrical Installations &amp; PLC</div>
+              <div class="cert-meta">Written &amp; Oral Exam Certified · PLC, VFDs, Power Quality</div>
+            </div>
+            <span class="badge amber">INDUSTRIAL</span>
+          </div>
+
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">LinkedIn Learning · Embedded C</div>
+              <div class="cert-title">C Programming for Embedded Applications</div>
+              <div class="cert-meta">Sep 2024 · ID: 6a99801c5a05...aaeb64c46</div>
+            </div>
+            <span class="badge">VERIFIED</span>
+          </div>
+
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">AWS &amp; Udacity Nanodegree Scholarship</div>
+              <div class="cert-title">AWS Machine Learning Fundamentals &amp; AI Programming with Python</div>
+              <div class="cert-meta">Dec 2023 – Aug 2024 · Dual Verified Nanodegrees</div>
+            </div>
+            <a class="btn btn-sm" href="https://confirm.udacity.com/e/c647672e-f6c0-11ee-b7ca-c7dfb87f3ea9" target="_blank" rel="noreferrer">Verify ↗</a>
+          </div>
+
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">Microsoft Certified &amp; DataCamp Professional</div>
+              <div class="cert-title">Azure AI-900 · DP-900 · AZ-900 &amp; DataCamp Pro Data Scientist</div>
+              <div class="cert-meta">Verified Credly Badges &amp; DataCamp Credentials (2023–2024)</div>
+            </div>
+            <a class="btn btn-sm" href="https://www.credly.com/users/bnina-ayoub.840931e7" target="_blank" rel="noreferrer">Credly ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 07 / DIRECT COMMS TERMINAL ================= -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="hud-box comms-box">
+          <div>
+            <div class="sec-eyebrow">07 // Direct Comms Channel</div>
+            <h2>Ready for Mission-Critical Embedded &amp; Autonomy Teams.</h2>
+            <p>
+              Based in Türkiye, fluent in <strong>Turkish (C1), English (C1), French (C2), and Arabic</strong>, and ready to contribute immediately to UAV avionics, deterministic RTOS firmware, hardware-in-the-loop validation, or real-time edge perception teams.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="Ayoub_Bnina_Engineering_Portfolio.pdf" download>↓ Download Full A4 PDF Dossier</a>
+              <button class="btn" type="button" id="copyEmailBtn">Copy Email Address</button>
+            </div>
+          </div>
+
+          <div class="comms-links">
+            <a class="comm-row" href="mailto:bninayoub.pro@gmail.com">
+              <span>EMAIL</span>
+              <strong>bninayoub.pro@gmail.com ↗</strong>
+            </a>
+            <a class="comm-row" href="tel:+905016311031">
+              <span>PHONE (TR)</span>
+              <strong>+90 501 631 10 31 ↗</strong>
+            </a>
+            <a class="comm-row" href="https://github.com/bnina-ayoub" target="_blank" rel="noreferrer">
+              <span>GITHUB</span>
+              <strong>github.com/bnina-ayoub ↗</strong>
+            </a>
+            <a class="comm-row" href="https://www.linkedin.com/in/ayoub-bnina" target="_blank" rel="noreferrer">
+              <span>LINKEDIN</span>
+              <strong>linkedin.com/in/ayoub-bnina ↗</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><strong>AYOUB BNINA</strong> · EMBEDDED ROBOTICS · RTOS FIRMWARE · REAL-TIME AUTONOMY</div>
+      <div>SAMSUN, TÜRKİYE · VERIFIED ENGINEERING TELEMETRY · 2026</div>
+    </div>
+  </footer>
+
+  <!-- ================= TACTICAL LIGHTBOX MODAL ================= -->
+  <div class="modal" id="lightboxModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="hud-box modal-dialog">
+      <div class="modal-bar">
+        <span id="modalTitle">MEDIA INSPECTOR</span>
+        <button class="modal-close" id="modalClose" type="button">ESC [CLOSE]</button>
+      </div>
+      <div class="modal-stage" id="modalStage"></div>
+      <div class="modal-caption" id="modalCaption"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
